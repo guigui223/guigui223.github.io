@@ -7,7 +7,7 @@
     <title>九木 · Forestwud</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/290-dynamic-slides.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
 
     
 
@@ -16,13 +16,13 @@
 
 
     <div class="navbar">
-        <a href="http://">
+        <a href="https://guigui223.github.io/forestwud/">
             <div class="forestwud">
             九木 · Forestwud
             </div>
         </a>
-        <div class="menu">
-            <ul id="menu">
+        <div class="nav">
+            <ul id="nav">
                 <li>
                     <a href="#">
                         <span>回到首頁</span>Top</a>
@@ -46,6 +46,93 @@
             </ul>
         </div>
     </div>
+
+    <div class="slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/news/new01.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/news/new02.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/news/new03.png" alt=""></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    
+    <div class="menu">
+        <div class="box1"></div>
+        <div class="h3"><h3>Menu</h3></div>
+        <div class="ruler"><img src="img/thing/01-01.png" alt=""></div>
+        <div class="card">
+            <div class="one">
+                <div class="card_a" id="a">
+                    <a href="">
+                        <img src="img/bags/bag01.jpg" alt="">
+                        <h3>斜背包</h3>
+                    </a>
+                </div>
+                <div class="card_a" id="b">
+                    <a href="">
+                        <img src="img/bags/bag02.jpg" alt="">
+                        <h3>手提包</h3>
+                    </a>
+                </div>
+                <div class="card_a" id="a">
+                    <a href="">
+                        <img src="img/bags/bag03.jpg" alt="">
+                        <h3>手拿包</h3>
+                    </a>   
+                </div>
+            </div>
+            <div class="two">
+                <div class="card_a" id="b">
+                    <a href="">
+                        <img src="img/bags/bag04.jpg" alt="">
+                        <h3>後背包</h3>
+                    </a>   
+                </div>
+                <div class="card_a" id="a">
+                    <a href="">
+                        <img src="img/bags/bag05.jpg" alt="">
+                        <h3>小型包款</h3>
+                    </a>   
+                </div>
+                <div class="card_a" id="b">
+                    <a href="">
+                        <img src="img/bags/bag06.jpg" alt="">
+                        <h3>功能加購</h3>
+                    </a>   
+                </div>
+                </div>
+            </div>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 80,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+            },
+        });
+    </script>
+    
+    
 
 
 

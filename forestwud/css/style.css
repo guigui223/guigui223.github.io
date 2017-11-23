@@ -32,7 +32,7 @@ body{
     text-decoration:none;   
 }
 
-.menu{
+.nav{
     position: absolute;
     right: 30px;
     width:480px;
@@ -40,20 +40,20 @@ body{
     bottom: 80px;
 }
 
-#menu{ 
+#nav{ 
     width:480px; 
     margin:50px auto; 
     /* border:1px solid #CCC; */
     overflow:hidden; 
 }
 
-#menu ul{ 
+#nav ul{ 
     margin:0;
     padding:0;
     list-style:none;
 }
 
-#menu li{
+#nav li{
     width:80px; 
     height:22px; 
     line-height:22px; 
@@ -62,7 +62,7 @@ body{
     text-align:center; 
 }
 
-#menu a{ 
+#nav a{ 
     width:80px;
     float:left;
     overflow:hidden;
@@ -71,12 +71,130 @@ body{
     font-size: 14px;
 }
 
-#menu span{
+#nav span{
     display:block;
     margin-top:-22px;
     font-size: 14px;
 }
 
-#menu a:hover{
+#nav a:hover{
     padding-top:22px;
+}
+
+
+/* slider */
+.slider{
+width: 100%;
+height: 500px;
+position: relative;
+/* background-image: url(img/slider/slider.png); */
+z-index: 1;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 60px;
+    z-index: -1;
+}
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background: #fff;
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+
+/* menu */
+.menu{
+    width: 100vw;
+    height: 800px;
+    position: relative;
+}
+
+.box1{
+    width: 100vw;
+    height: 50px;
+}
+
+.menu .h3 h3{
+    margin: 0;
+}
+
+.menu .h3{
+    text-align: center;
+    line-height: 18px;
+}
+
+.ruler{
+    text-align: center;
+    line-height: 15px;
+}
+
+/* card */
+.card{
+    width: 80vw;
+    height: 660px;
+    /* background-color: #eee; */
+    position: absolute;
+    bottom: 20px;
+    left: 140px;
+}
+
+.card .one{
+    display: flex;
+}
+
+.card .two{
+    display: flex;
+}
+
+.card .card_a{
+    flex: 1;
+    text-align: center;
+    position: relative; 
+    margin-top: 20px;
+}
+
+.card .card_a img{
+    border-radius: 50%;
+    transition-duration: 0.8s;
+}
+
+.card .card_a:hover img{
+    -webkit-filter:blur(3px);
+}
+
+.card .card_a h3{
+    opacity: 0;
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;  
+}
+
+.card .card_a:hover h3{
+    opacity: 1;
+}
+
+#a h3{
+    color: rgb(255, 255, 255);
+}
+
+#b h3{
+    color: black;
 }
