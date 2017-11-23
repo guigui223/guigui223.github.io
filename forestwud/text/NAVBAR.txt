@@ -1,0 +1,42 @@
+NAVBAR
+<CSS>
+#Menu{ width:480px; margin:50px auto; 
+    /* border:1px solid #CCC; */
+    overflow:hidden; }
+
+#Menu ul{ margin:0;padding:0;list-style:none;}
+
+#Menu li{ width:80px; height:22px; line-height:22px; float:left; overflow:hidden; text-align:center; }
+
+#Menu a{ width:80px;float:left;overflow:hidden;text-decoration:none;color:#eee;}
+
+#Menu span{display:block;margin-top:-22px;}
+
+#Menu a:hover{padding-top:22px;}
+
+
+
+<Html>
+
+<ul id="Menu">
+        <li>
+            <a href="#">
+                <span>Top</span>回到首頁</a>
+        </li>
+        <li>
+            <a href="#">
+                <span>Menu</span>商品款式</a>
+        </li>
+        <li>
+            <a href="#">
+                <span>News</span>最新消息</a>
+        </li>
+        <li>
+            <a href="#">
+                <span>About</span>關於九木</a>
+        </li>
+        <li>
+            <a href="#">
+                <span>Contact</span>悄悄話</a>
+        </li>
+    </ul>

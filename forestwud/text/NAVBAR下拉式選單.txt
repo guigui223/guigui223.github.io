@@ -1,0 +1,96 @@
+下拉式選單NAVBAR
+<CSS>
+.box_a {
+            width: 30px;
+            height: 40px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .line {
+            width: 30px;
+            border: 1px solid rgb(102, 102, 102);
+            margin-bottom: 5px;
+        }
+
+        .menu .link {
+            /* display: block; */
+            width: 100%;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            font-family: 微軟正黑體;
+            border-bottom: 1px solid white;
+            box-sizing: border-box;
+        }
+
+        .menu .link:nth-child(5) {
+            border-bottom: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu {
+            opacity: 0;
+            transition: all 1s ease-out;
+            height: 0;
+            width: 100%;
+            background-color: rgb(197, 197, 197);
+            float: left;
+        }
+
+        .menu_1 {
+            /* display: none; */
+            opacity: 1;
+            height: 300px;
+            /* height: calc(100vh - 40px); */
+            float: left;
+        }
+
+        .text{
+            position: absolute;
+            z-index: -1;
+        }
+
+
+
+<Html>
+
+<div class="box_a" onclick="toggle_menu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="link">
+            <a href="">LINK1</a>
+        </div>
+        <div class="link">
+            <a href="">LINK2</a>
+        </div>
+        <div class="link">
+            <a href="">LINK3</a>
+        </div>
+        <div class="link">
+            <a href="">LINK4</a>
+        </div>
+        <div class="link">
+            <a href="">LINK5</a>
+        </div>
+    </div>
+    
+
+    <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iure saepe beatae repudiandae vel commodi laborum ratione rerum, animi autem provident? Expedita facilis rem, consequuntur, nobis laborum dolore commodi unde excepturi mollitia quis ex similique itaque cum minima debitis, eos repellat laudantium cumque exercitationem sed placeat facere voluptatem quam! Laboriosam?</div>
+
+    <script>
+
+        function toggle_menu() {
+            var a = document.querySelector('#menu');
+            a.classList.toggle('menu_1');
+        }
+
+    </script>

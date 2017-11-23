@@ -1,0 +1,33 @@
+±À²¾
+<CSS>
+.text {
+            position: absolute;
+            top: 40px;
+            z-index: -1;
+            transition: all 1s ;
+        }
+
+        .text_1{
+            
+            transform: translateX(320px);
+        }
+
+
+
+<Html>
+
+<div class="text" id="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iure saepe beatae repudiandae vel commodi laborum
+        ratione rerum, animi autem provident? Expedita facilis rem, consequuntur, nobis laborum dolore commodi unde excepturi
+        mollitia quis ex similique itaque cum minima debitis, eos repellat laudantium cumque exercitationem sed placeat facere
+        voluptatem quam! Laboriosam?
+    </div>
+
+<script>
+
+        function toggle_menu() {
+            var a = document.querySelector('#text');
+            a.classList.toggle('text_1');
+        }
+
+    </script>

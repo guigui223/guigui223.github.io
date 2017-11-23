@@ -1,0 +1,54 @@
+Jquery卷軸高度事件
+<CSS>
+#top{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+}
+
+#top.show{
+    display: block;
+}
+
+#top.hide{
+    display: none;
+}
+
+
+
+<Html>
+
+<div id="top">Top</div>
+
+$('#top').click(function(){
+        $(window).scrollTop(0);
+    }); 
+    // $('#id名稱或.class名稱').click點擊事件(function(){欲執行效果}); → 當點擊此id時,顯示裡面的效果
+    // scrolltop取得卷軸方塊上方目前的位置
+    // $(window)選擇整個視窗
+    // scrollTop(0高度) 將高度設定為零
+    // 當點擊此id時,整個視窗回到高度0的位置
+
+    
+    $(window).scroll(function () {
+    
+        var top=$(window).scrollTop()
+
+        if(top > 500){
+            // 當scrollTop大於500(高度不需加單位)的時候執行以下效果
+            $('#top').fadeIn("slow");
+            // $('id名稱').fadeIn淡入("slow");
+            // 可以使此id慢慢的淡入,括號內也可不放任何文字,也可放入數字,數字是指毫秒
+        }else{
+            // 否則,scrollTop小於500的時候執行以下效果
+            $('#top').fadeOut(2000);
+            // $('id名稱').fadeOut淡出(5000);
+            // 可以使此id慢慢的淡出
+        };
+
+    });
+
+    
+
+</script>

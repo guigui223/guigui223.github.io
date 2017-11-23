@@ -1,0 +1,82 @@
+º~³ù±ø
+<CSS>
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(202, 202, 202);
+    position: relative;
+}
+
+.box .line1, .box .line2, .box .line3{
+    height: 10px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    transition-duration: 1s;   
+}
+
+.box .line1{
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box .line2{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box .line3{
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box:hover .line1{
+    animation: ani1 1s forwards;
+}
+
+.box:hover .line3{
+    animation: ani2 1s forwards;
+}
+
+.box:hover .line2{
+    opacity: 0;
+}
+
+@keyframes ani1{
+    
+    50%{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    100%{
+    transform: translate(-50%, 200%) rotate(45deg);
+    /* transition-delay: 0.5s; */
+    }
+}
+
+@keyframes ani2{
+    
+    50%{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    100%{
+    transform: translate(-50%, -200%) rotate(-45deg); 
+    /* transition-delay: 0.5s; */
+    }
+}
+
+
+
+<Html>
+
+<div class="box">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
