@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unslider.css">
 
     <style>
     
@@ -16,6 +17,11 @@
     .logo{
         height: 50px;
     }
+
+    .my-slider{
+        width: 100%;
+        height: 925px;
+    }
     
     </style>
 </head>
@@ -24,7 +30,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#422C1E">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <a href="首頁連結網址"><img class="logo" src="img/logo-white.png" alt=""></a> 
+                <a href="https://guigui223.github.io/tiramisu/"><img class="logo" src="img/logo-white.png" alt=""></a> 
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">首頁
+                        <a class="nav-link" href="https://guigui223.github.io/tiramisu/">首頁
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
@@ -64,7 +70,7 @@
     
     <div class="my-slider">
         <ul>
-            <li>My slide</li>
+            <li><img src="img/slider01.jpg" alt="" width="100%" height="auto"></li>
             <li>Another slide</li>
             <li>My last slide</li>
         </ul>
@@ -74,5 +80,15 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/unslider-min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.my-slider').unslider({
+                autoplay: true,
+                infinite: true,
+                nav: false,
+                arrow: false,
+            });
+        });
+    </script>
 </body>
 </html>
