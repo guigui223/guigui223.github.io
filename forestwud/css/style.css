@@ -1,0 +1,82 @@
+
+body{
+    margin:0 ;
+    font-family: 微軟正黑體;
+    box-sizing: border-box;
+}
+
+
+/* navbar */
+.navbar{
+    width: 100vw;
+    height: 80px;
+    background-color: #EFEFEF;
+    position: relative;
+}
+
+.forestwud{
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size:17px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.forestwud a{
+    text-decoration:none;   
+}
+
+.menu{
+    position: absolute;
+    right: 30px;
+    width:480px;
+    height:22px;
+    bottom: 80px;
+}
+
+#menu{ 
+    width:480px; 
+    margin:50px auto; 
+    /* border:1px solid #CCC; */
+    overflow:hidden; 
+}
+
+#menu ul{ 
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+#menu li{
+    width:80px; 
+    height:22px; 
+    line-height:22px; 
+    float:left; 
+    overflow:hidden; 
+    text-align:center; 
+}
+
+#menu a{ 
+    width:80px;
+    float:left;
+    overflow:hidden;
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+#menu span{
+    display:block;
+    margin-top:-22px;
+    font-size: 14px;
+}
+
+#menu a:hover{
+    padding-top:22px;
+}
