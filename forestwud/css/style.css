@@ -178,6 +178,7 @@ margin-top: 130px;
 .ruler{
     text-align: center;
     line-height: 15px;
+    /* margin-bottom:40px;  */
 }
 
 /* card */
@@ -188,6 +189,7 @@ margin-top: 130px;
     position: absolute;
     bottom: 20px;
     left: 140px;
+    margin-bottom: 50px;
 }
 
 .card .one{
@@ -202,7 +204,7 @@ margin-top: 130px;
     flex: 1;
     text-align: center;
     position: relative; 
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .card .card_a img{
@@ -236,4 +238,46 @@ margin-top: 130px;
     color: black;
 }
 
+/* news */
+.news{
+    width: 100vw;
+    height: 700px;
+    background-color: #EFEFEF;
+    margin-top: 50px;
+}
+
+.news .h3{
+    text-align: center;
+    line-height: 18px;
+}
+
+.news .h3 h3{
+    margin: 0;
+}
+
+.new_out{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    line-height: 250px;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+}
+
+.new_1{
+    margin: 0 auto;
+    width: 55%;
+    height: 33.33%;
+    border-bottom: 3px dashed black
+}
+
+.new_1:nth-child(1){
+    border-top: 3px dashed black;
+}
+
+.new_2{
+    width: 100%;
+    height: 90%;
+    background-color: black;
+}
 

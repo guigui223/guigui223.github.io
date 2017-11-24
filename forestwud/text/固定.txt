@@ -1,0 +1,47 @@
+©T©wNAV
+<CSS>
+
+.fix{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.margin{
+    margin-top: 60px;
+}
+
+
+
+<BODY>
+
+
+
+
+<script>
+$(window).scroll(function () {
+
+                var top = $(window).scrollTop()
+
+                if (top > 80) {
+                    $('.nav').addClass('fix');
+                }else{
+                    $('.nav').removeClass('fix');
+                }
+            });
+
+
+
+
+
+$(window).scroll(function () {
+
+                var top = $(window).scrollTop()
+
+                if (top > 80) {
+                    $('.my-slider').addClass('margin');
+                } else {
+                    $('.my-slider').removeClass('margin');
+                }
+            });
+</script>
