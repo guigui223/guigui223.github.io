@@ -1,8 +1,10 @@
-
+*{
+    box-sizing: border-box;
+}
 body{
     margin:0 ;
-    font-family: 微軟正黑體;
-    box-sizing: border-box;
+    padding: 0;
+    font-family: 微軟正黑體;   
 }
 
 
@@ -11,8 +13,11 @@ body{
     width: 100%;
     height: 80px;
     background-color: #EFEFEF;
-    position: relative;
+    /* position: relative; */
     position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition-duration: 0.5s;
 }
 
 .forestwud{
@@ -82,31 +87,30 @@ body{
     padding-top:22px;
 }
 
-/* .fix{
-    
-    top: 0;
-    z-index: 1;
-} */
+.white{
+    background-color: rgba(255, 255, 255, 0.712);
+    transition-duration: 1s;   
+}
 
 
 /* slider */
-.slider{
-width: 100%;
+.slider_out{
+width: 100vw;
 height: 500px;
-position: relative;
-/* background-image: url(img/slider/slider.png); */
+margin-top: 130px;
+}
 
+.slider{
+    width: 455px;
+    height: 455px;
+    float: left ;
 }
 
 .swiper-container {
-    width: 100%;
-    height: 400px;
-    position: absolute;
-    top: 60px;
-    /* margin-top: 180px; */
+      width: 100%;
+      height: 100%;
 }
 .swiper-slide {
-    position: absolute;
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -125,8 +129,29 @@ position: relative;
     align-items: center;
 }
 
-image_a{
-    background-image: url(img/news/new01.png)
+.img1{
+    -webkit-clip-path: polygon(0 0, 91% 0%, 27% 88%, 0 50%);
+    clip-path: polygon(0 0, 91% 0%, 27% 88%, 0 50%);
+    width: 455px;
+    height: 455px;
+}
+
+.img2{
+    -webkit-clip-path: polygon(53% 0, 0% 88%, 100% 88%);
+    clip-path: polygon(53% 0, 0% 88%, 100% 88%);
+    width: 455px;
+    height:455px;
+}
+
+.img3{
+    -webkit-clip-path: polygon(9% 0, 100% 0%, 100% 50%, 73% 88%);
+    clip-path: polygon(9% 0, 100% 0%, 100% 50%, 73% 88%);
+    width: 455px;
+    height: 455px;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: rgb(102, 102, 102) !important;
 }
 
 /* menu */
@@ -182,7 +207,7 @@ image_a{
 
 .card .card_a img{
     border-radius: 50%;
-    transition-duration: 0.8s;
+    transition-duration: 0.3s;
 }
 
 .card .card_a:hover img{
@@ -210,3 +235,5 @@ image_a{
 #b h3{
     color: black;
 }
+
+

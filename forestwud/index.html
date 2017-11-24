@@ -47,22 +47,81 @@
         </div>
     </div>
 
-    <div class="slider">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/news/new01.png" alt=""></div>
-                <div class="swiper-slide"><img src="img/news/new02.png" alt=""></div>
-                <div class="swiper-slide"><img src="img/news/new03.png" alt=""></div>
+    <div class="slider_out">
+        <div class="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="img1">
+                            <img height="500px" width="500px" src="img/news/new01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img1">
+                            <img height="455px" width="500px" src="img/news/new02.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img1">
+                            <img height="455px" width="500px" src="img/news/new03.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+        </div>
+    
+        <div class="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="img2">
+                            <img height="500px" width="500px" src="img/news/new02.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img2">
+                            <img height="500px" width="500px" src="img/news/new03.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img2">
+                            <img height="500px" width="500px" src="img/news/new01.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    
+        <div class="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="img3">
+                            <img height="500px" width="500px" src="img/news/new03.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img3">
+                            <img height="500px" width="500px" src="img/news/new01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img3">
+                            <img height="500px" width="500px" src="img/news/new02.png" alt="">
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
         </div>
     </div>
     
     <div class="menu">
         <div class="box1"></div>
         <div class="h3"><h3>Menu</h3></div>
-        <div class="ruler"><img src="img/thing/01-01.png" alt=""></div>
+        <div class="ruler"><img width="130px" src="img/thing/01-01.png" alt=""></div>
         <div class="card">
             <div class="one">
                 <div class="card_a" id="a">
@@ -119,30 +178,28 @@
 
     <script>
 
-        // $(window).scroll(function () {
+        $(window).scroll(function () {
 
-        //     var top = $(window).scrollTop()
+            var top = $(window).scrollTop()
 
-        //     if (top > 80) {
-        //         $('.navbar').addClass('fix');
-        //     } else {
-        //         $('.navbar').removeClass('fix');
-        //     }
-        // });
+            if (top > 80) {
+                $('.navbar').addClass('white');
+            } else {
+                $('.navbar').removeClass('white');
+            }
+        });
 
 
 
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3,
-            spaceBetween: 80,
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            autoplay: {
-                delay: 1500,
-            },
+                allowTouchMove: false,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                autoplay: {
+                    delay: 2000,
+                },
+                loop: true,
         });
     </script>
     
