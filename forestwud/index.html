@@ -102,51 +102,54 @@
 
     
     <div class="menu">
-        <div class="box1"></div>
-        <div class="h3"><h3>Menu</h3></div>
-        <div class="ruler"><img width="130px" src="img/thing/01-01.png" alt=""></div>
+        <div class="h3">
+            <h3>Menu</h3>
+        </div>
+        <div class="ruler">
+            <img width="130px" src="img/thing/01-01.png" alt="">
+        </div>
         <div class="card">
             <div class="one">
                 <div class="card_a" id="a">
                     <a href="">
-                        <img src="img/bags/bag01.jpg" alt="">
+                        <img id="a_1" src="img/bags/bag01.png" alt="">
                         <h3>斜背包</h3>
                     </a>
                 </div>
                 <div class="card_a" id="b">
                     <a href="">
-                        <img src="img/bags/bag02.jpg" alt="">
+                        <img id="a_2" src="img/bags/bag02.png" alt="">
                         <h3>手提包</h3>
                     </a>
                 </div>
                 <div class="card_a" id="a">
                     <a href="">
-                        <img src="img/bags/bag03.jpg" alt="">
+                        <img id="a_3" src="img/bags/bag03.png" alt="">
                         <h3>手拿包</h3>
-                    </a>   
+                    </a>
                 </div>
             </div>
             <div class="two">
                 <div class="card_a" id="b">
                     <a href="">
-                        <img src="img/bags/bag04.jpg" alt="">
+                        <img id="a_4" src="img/bags/bag04.png" alt="">
                         <h3>後背包</h3>
-                    </a>   
+                    </a>
                 </div>
                 <div class="card_a" id="a">
                     <a href="">
-                        <img src="img/bags/bag05.jpg" alt="">
+                        <img id="a_5" src="img/bags/bag05.png" alt="">
                         <h3>小型包款</h3>
-                    </a>   
+                    </a>
                 </div>
                 <div class="card_a" id="b">
                     <a href="">
-                        <img src="img/bags/bag06.jpg" alt="">
+                        <img id="a_6" src="img/bags/bag06.png" alt="">
                         <h3>功能加購</h3>
-                    </a>   
-                </div>
+                    </a>
                 </div>
             </div>
+        </div>
     </div>
 
     <div class="news">
@@ -181,6 +184,7 @@
 
     <script>
 
+        // navbar顏色變換
         $(window).scroll(function () {
 
             var top = $(window).scrollTop()
@@ -193,7 +197,7 @@
         });
 
 
-
+        // slider
         var swiper = new Swiper('.swiper-container', {
                 allowTouchMove: false,
                 loop: true,
@@ -207,6 +211,55 @@
                     delay: 2000,
                 },
             });
+
+        // card滑鼠移入移出事件
+        $('#a_1').mouseenter(function () {
+            $('#a_2 , #a_3 , #a_4 , #a_5 , #a_6').addClass('black');
+        });
+
+        $('#a_1').mouseleave(function () {
+            $('#a_2 , #a_3 , #a_4 , #a_5 , #a_6').removeClass('black');
+        });
+
+        $('#a_2').mouseenter(function () {
+            $('#a_1 , #a_3 , #a_4 , #a_5 , #a_6').addClass('black');
+        });
+
+        $('#a_2').mouseleave(function () {
+            $('#a_1 , #a_3 , #a_4 , #a_5 , #a_6').removeClass('black');
+        });
+
+        $('#a_3').mouseenter(function () {
+            $('#a_2 , #a_1 , #a_4 , #a_5 , #a_6').addClass('black');
+        });
+
+        $('#a_3').mouseleave(function () {
+            $('#a_2 , #a_1 , #a_4 , #a_5 , #a_6').removeClass('black');
+        });
+
+        $('#a_4').mouseenter(function () {
+            $('#a_2 , #a_3 , #a_1 , #a_5 , #a_6').addClass('black');
+        });
+
+        $('#a_4').mouseleave(function () {
+            $('#a_2 , #a_3 , #a_1 , #a_5 , #a_6').removeClass('black');
+        });
+
+        $('#a_5').mouseenter(function () {
+            $('#a_2 , #a_3 , #a_4 , #a_1 , #a_6').addClass('black');
+        });
+
+        $('#a_5').mouseleave(function () {
+            $('#a_2 , #a_3 , #a_4 , #a_1 , #a_6').removeClass('black');
+        });
+
+        $('#a_6').mouseenter(function () {
+            $('#a_2 , #a_3 , #a_4 , #a_5 , #a_1').addClass('black');
+        });
+
+        $('#a_6').mouseleave(function () {
+            $('#a_2 , #a_3 , #a_4 , #a_5 , #a_1').removeClass('black');
+        });
     </script>
     
     
