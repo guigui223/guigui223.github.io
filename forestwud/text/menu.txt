@@ -1,0 +1,196 @@
+<css>
+
+/* menu */
+.menu{
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+
+.box1{
+    width: 100%;
+    height: 50px;
+}
+
+.menu .h3 h3{
+    margin: 0;
+}
+
+.menu .h3{
+    text-align: center;
+    line-height: 18px;
+}
+
+.ruler{
+    text-align: center;
+    line-height: 15px;
+    /* margin-bottom:40px;  */
+}
+
+/* card */
+.card{
+    width: 70%;
+    height: 660px;
+    /* background-color: #eee; */
+    margin: 0 auto;
+    bottom: 20px;
+    /* left: 140px; */
+    margin-bottom: 50px;
+}
+
+.card .one{
+    display: flex;
+}
+
+.card .two{
+    display: flex;
+}
+
+.card .card_a{
+    flex: 1;
+    text-align: center;
+    position: relative; 
+    margin-top: 50px;
+}
+
+.card .card_a img{
+    border-radius: 50%;
+    transition-duration: 0.3s;
+}
+
+.card .card_a:hover img{
+    -webkit-filter:blur(3px);
+}
+
+.card .card_a h3{
+    opacity: 0;
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;  
+}
+
+.card .card_a:hover h3{
+    opacity: 1;
+}
+
+#a h3{
+    color: rgb(255, 255, 255);
+}
+
+#b h3{
+    color: black;
+}
+
+.black{
+    -webkit-filter:brightness(.5);
+}
+
+<body>
+
+<div class="menu">
+        <div class="box1"></div>
+        <div class="h3">
+            <h3>Menu</h3>
+        </div>
+        <div class="ruler">
+            <img width="130px" src="img/thing/01-01.png" alt="">
+        </div>
+        <div class="card">
+            <div class="one">
+                <div class="card_a" id="a" >
+                    <a href="">
+                        <img id="a_1" src="img/bags/bag01.png" alt="">
+                        <h3>斜背包</h3>
+                    </a>
+                </div>
+                <div class="card_a" id="b" >
+                    <a href="">
+                        <img id="a_2" src="img/bags/bag02.png" alt="">
+                        <h3>手提包</h3>
+                    </a>
+                </div>
+                <div class="card_a" id="a" >
+                    <a href="">
+                        <img id="a_3" src="img/bags/bag03.png" alt="">
+                        <h3>手拿包</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="two">
+                <div class="card_a" id="b" >
+                    <a href="">
+                        <img id="a_4" src="img/bags/bag04.png" alt="">
+                        <h3>後背包</h3>
+                    </a>
+                </div>
+                <div class="card_a" id="a" >
+                    <a href="">
+                        <img id="a_5" src="img/bags/bag05.png" alt="">
+                        <h3>小型包款</h3>
+                    </a>
+                </div>
+                <div class="card_a" id="b" >
+                    <a href="">
+                        <img id="a_6" src="img/bags/bag06.png" alt="">
+                        <h3>功能加購</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    
+        // card滑鼠移入移出事件
+        $('#a_1').mouseenter(function () {
+                $('#a_2 , #a_3 , #a_4 , #a_5 , #a_6').addClass('black');
+            });
+        
+        $('#a_1').mouseleave(function () {
+                $('#a_2 , #a_3 , #a_4 , #a_5 , #a_6').removeClass('black');
+            });
+        
+        $('#a_2').mouseenter(function () {
+                $('#a_1 , #a_3 , #a_4 , #a_5 , #a_6').addClass('black');
+            });
+
+        $('#a_2').mouseleave(function () {
+                $('#a_1 , #a_3 , #a_4 , #a_5 , #a_6').removeClass('black');
+            });
+
+        $('#a_3').mouseenter(function () {
+                $('#a_2 , #a_1 , #a_4 , #a_5 , #a_6').addClass('black');
+            });
+
+        $('#a_3').mouseleave(function () {
+                $('#a_2 , #a_1 , #a_4 , #a_5 , #a_6').removeClass('black');
+            });
+
+        $('#a_4').mouseenter(function () {
+                $('#a_2 , #a_3 , #a_1 , #a_5 , #a_6').addClass('black');
+            });
+
+        $('#a_4').mouseleave(function () {
+                $('#a_2 , #a_3 , #a_1 , #a_5 , #a_6').removeClass('black');
+            });
+
+        $('#a_5').mouseenter(function () {
+                $('#a_2 , #a_3 , #a_4 , #a_1 , #a_6').addClass('black');
+            });
+
+        $('#a_5').mouseleave(function () {
+                $('#a_2 , #a_3 , #a_4 , #a_1 , #a_6').removeClass('black');
+            });
+
+        $('#a_6').mouseenter(function () {
+                $('#a_2 , #a_3 , #a_4 , #a_5 , #a_1').addClass('black');
+            });
+
+        $('#a_6').mouseleave(function () {
+                $('#a_2 , #a_3 , #a_4 , #a_5 , #a_1').removeClass('black');
+            });
+    </script>

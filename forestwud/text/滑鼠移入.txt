@@ -1,0 +1,32 @@
+滑鼠移入
+
+<css>
+
+#text03{
+    height: 100px;
+    width: 100px;
+    background-color: #eee;
+    line-height: 100px;
+    border: 1px solid rgb(87, 87, 87);
+}
+
+
+
+
+<BODY>
+<div id="text03">滑鼠移入事件</div>
+
+
+
+<script src="/01/js/jquery-3.2.1.min.js"></script>
+
+<script>
+$('#text03').mouseenter(function(){
+        $('#text03').toggleClass('red');
+    });
+
+$('#text04').mouseleave(function(){
+        $('#text04').toggleClass('red');
+    });
+
+</script>
