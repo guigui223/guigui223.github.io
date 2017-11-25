@@ -49,74 +49,57 @@
 
     <div class="slider_out">
         <div class="slider">
+    
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="img1">
-                            <img height="500px" width="500px" src="img/news/new01.png" alt="">
-                        </div>
+                        <img width="444px" src="img/news/new01-1.png" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <div class="img1">
-                            <img height="455px" width="500px" src="img/news/new02.png" alt="">
-                        </div>
+                        <img width="444px" src="img/news/new02-1.png" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <div class="img1">
-                            <img height="455px" width="500px" src="img/news/new03.png" alt="">
-                        </div>
+                        <img width="444px" src="img/news/new03-1.png" alt="">
                     </div>
                 </div>
             </div>
-        </div>
     
-        <div class="slider">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="img2">
-                            <img height="500px" width="500px" src="img/news/new02.png" alt="">
-                        </div>
+                        <img width="444px" src="img/news/new02-2.png" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <div class="img2">
-                            <img height="500px" width="500px" src="img/news/new03.png" alt="">
-                        </div>
+                        <img width="444px" src="img/news/new03-2.png" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <div class="img2">
-                            <img height="500px" width="500px" src="img/news/new01.png" alt="">
-                        </div>
+                        <img width="444px" src="img/news/new01-2.png" alt="">
                     </div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
             </div>
-        </div>
     
-        <div class="slider">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="img3">
-                            <img height="500px" width="500px" src="img/news/new03.png" alt="">
-                        </div>
+                        <img width="444px" src="img/news/new03-3.png" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <div class="img3">
-                            <img height="500px" width="500px" src="img/news/new01.png" alt="">
-                        </div>
+                        <img width="444px" src="img/news/new01-3.png" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <div class="img3">
-                            <img height="500px" width="500px" src="img/news/new02.png" alt="">
-                        </div>
+                        <img width="444px" src="img/news/new02-3.png" alt="">
                     </div>
                 </div>
-    
             </div>
+    
+    
+    
+    
         </div>
     </div>
+
     
     <div class="menu">
         <div class="box1"></div>
@@ -213,14 +196,17 @@
 
         var swiper = new Swiper('.swiper-container', {
                 allowTouchMove: false,
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 0,
                 pagination: {
                     el: '.swiper-pagination',
+                    clickable: true,
                 },
                 autoplay: {
                     delay: 2000,
                 },
-                loop: true,
-        });
+            });
     </script>
     
     
