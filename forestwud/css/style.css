@@ -111,7 +111,12 @@ margin-top: 130px;
       height: 100%;
       display: inline-block !important;
       margin: 0;
-    }
+}
+
+.swiper-pagination-bullet-active{
+    background: rgb(78, 78, 78) !important;
+}
+
 .swiper-slide {
       text-align: center;
       font-size: 18px;
