@@ -395,6 +395,16 @@ margin-top: 130px;
     margin: 0;
 }
 
+.form{
+    width: 65%;
+    height: 600px;
+    background-color: rgb(31, 8, 8);
+    padding-top:150px;
+    margin: auto;
+}
+
+
+
 /* icon */
 #icon{
     width: 30px;
