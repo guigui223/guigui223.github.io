@@ -1,0 +1,87 @@
+
+
+
+/* 使用平板時顯示 */
+    @media screen and (max-width: 1200px) {
+        .col{
+            width: 50%; 
+        }
+    }
+
+    /* 使用手機時顯示 */
+    @media screen and (max-width: 460px) {
+        .col{
+            width: 100%; 
+        }
+    }
+
+
+<body>
+
+<form action="">
+<!-- 使用語法form+tab,表單資料 -->
+                
+    <div>
+        輸入框製作<br>
+        <input type="email" placeholder="e-mail" required> 
+        <!-- placeholder=灰色的預設文字,re+tab選擇required,輸入框需要回復 -->
+        <button title=送出>GO</button>
+        <!-- 使用語法but+tab,新增按鈕 -->
+    </div>
+    <br>                    
+    <div>
+        輸入框製作2<br>
+        <input type="text" value=只能看不能幹嘛 readonly> 
+        <!-- value=事先輸入好的預設文字,re+tab選擇re+tab,選擇reabonly,輸入框只能看 -->
+        <button>無效按鈕</button>
+    </div>
+    <br>
+    <div>
+        輸入框製作3<br>
+        <input type="password" title=密碼 required>
+        <!-- 使用語法input+tab,新增輸入框,password輸入文字會顯示星號 --> 
+        <button title=送出密碼>提交</button>
+    </div>
+    <br>
+    <div>
+        輸入框製作4<br>
+        <input type="file">
+        <!-- 使用語法input+tab,新增輸入框,file只能上傳檔案 -->
+    </div>
+    <br>
+    <div>
+        輸入框製作5<br>
+        <input type="text" title=文字>
+        <!-- 使用語法input+tab,新增輸入框,text只能輸入文字,title=游標移到時顯示標籤 -->
+        <button title=送出>GO</button>
+    </div>
+    <br>
+    <div>
+        輸入框製作6<br>
+        <input type="number" min=0 mix="100" title=數字>
+        <!-- 使用語法input+tab,新增輸入框,number只能輸入數字,min=最小值,mix=最大值,有無括號都可 -->
+        <button title=送出>GO</button>
+    </div>
+    <br>
+    <div>
+        輸入框製作7<br>
+        <input type="email" title=信箱>
+        <!-- 使用語法input+tab,新增輸入框,email只能輸入信箱,@格式跟網域辨識 -->
+        <button title=送出>GO</button>
+    </div>
+    <br>
+    <div>
+        輸入框製作8<br>
+        <select name="" id="">
+        <!-- 使用語法sel+tab,選擇select,新增下拉式選單 -->
+            <option value="">選項A</option>
+            <!-- 使用語法op+tab,選擇option,在>後方輸入文字會顯示在選項,value=輸入文字,會在資料庫顯示選項A對應的文字 -->
+            <option value="">選項B</option>
+            <option value="">選項C</option>
+        </select>   
+    </div>
+    <br>
+
+</form>
+
+</body>
