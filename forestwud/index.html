@@ -79,7 +79,7 @@
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
             </div>
-    
+            
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -93,12 +93,11 @@
                     </div>
                 </div>
             </div>
-    
-    
-    
-    
+
         </div>
     </div>
+
+    <div id="logo"><img width="120px" height="140px" src="img/logo/logo-01.svg" alt=""></div>
 
     
     <div class="menu" id="menu">
@@ -187,9 +186,99 @@
         <div class="ruler">
             <img width="130px" src="img/thing/01-01.png" alt="">
         </div>
+
+        <div class="about_1">
+            <div class="text_1">
+                <p>　　2014年04月，兩個還在就讀大二的女大生，因為總是找不到功能齊全又符合自己性格的包包，決定自己動手製作，並創立了九木·Forestwud這間手工布包。</br>
+                　　以簡單的剪裁設計，可以客訂的便利性經營著這家小店。不論是聯絡客服、打版採購、剪裁製作、打包出貨、拍照上架等等，全都由這兩個女大生親力親為，希望能將手作的溫度帶給那些找上她們的人。</p>
+            </div>
+        </div>
+        
+        <div class="about_2">
+            <div class="text_2">
+                <p>注意事項</br>
+                    1.依付款順序製作商品及出貨</br>
+                    2.商品付款開始計算，製作時間為七日</br>
+                    3.商品皆為手作，可能會有些許誤差</br>
+                    4.照片會有小小色差</br>
+                    5.商品有標記尺寸，可以比對是否是確</br>
+                    　切的size呦</br>
+                    6.如需要客製化服務，可以先來信詢問</br>
+                    7.部分商品不提供拉鍊及口袋(若有提</br>
+                    　供會標示)請買家下單前務必確認清</br>
+                    　楚喔</br>
+                    8.本館商品為訂製商品,不提供更換的
+                    　服務喔
+                </p>
+            </div>
+        </div>
+
+        <div class="about_3"></div>
+
+        <div class="about_4">
+            <div class="text_4">
+                <p>
+                徘徊森林的氣息</br> 
+                留戀原木的純粹</br>
+                擺脫城市的束縛</br> 
+                嚮往簡單的設計</br> 
+                貼近你我的生活</br> 
+                讓九木所有產品</br> 
+                全都成為生活中</br>
+                不可或缺的陪伴
+                </p>
+            </div>
+        </div>
+              
+    </div>
+
+    <div class="contact" id="contact">
+
+            <div class="box1"></div>
+            <div class="h3">
+                <h3>Contact</h3>
+            </div>
+            <div class="ruler">
+                <img width="130px" src="img/thing/01-01.png" alt="">
+            </div>
+
     </div>
 
 
+
+
+    <div id="icon">
+        <div class="icon">
+            <a href="https://www.facebook.com/forestwud.1994/?ref=bookmarks">
+                <img width="30px" height="30px" src="img/icon/facebook icon.svg.svg" alt="">
+            </a>
+        </div>
+        <div class="space"></div>
+        <div class="icon">
+            <a href="https://www.instagram.com/forestwud/">
+                <img width="30px" height="30px" src="img/icon/instagram icon.svg.svg" alt="">
+            </a>
+        </div>
+        <div class="space"></div>
+        <div class="icon">
+            <a href="https://www.pinkoi.com/user/forestwud">
+                <img width="30px" height="30px" src="img/icon/pinkoi icon-01.svg" alt="">
+            </a>
+        </div>
+        <div class="space"></div>
+        <div class="icon">
+            <a href="https://tw.creema.net/c/forestwud">
+                <img width="30px" height="30px" src="img/icon/creema icon-01.svg" alt="">
+            </a>
+        </div>
+        <div class="space"></div>
+        <div class="icon">
+            <a href="https://www.rakuten.com.tw/shop/forestwud/">
+                <img width="30px" height="30px" src="img/icon/Rakuten icon-01.svg" alt="">
+            </a>
+        </div>
+    </div>
+    <div id="top"><img width="30px" height="30px" src="img/icon/top.svg" alt=""></div>
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <!-- Swiper JS -->
@@ -276,6 +365,32 @@
         $('#a_6').mouseleave(function () {
             $('#a_2 , #a_3 , #a_4 , #a_5 , #a_1').removeClass('black');
         });
+
+
+        // 點擊back to top
+        $('#top').click(function(){  
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+             scrollTop: 0
+            }, 300);
+           
+            return false;
+            });
+
+        $(window).scroll(function () {
+    
+        var top=$(window).scrollTop()
+
+        if(top > 20){
+            
+            $('#top').fadeIn("slow");
+        }else{
+            $('#top').fadeOut("slow");
+        };
+
+        });
+        
+        
     </script>
     
     
