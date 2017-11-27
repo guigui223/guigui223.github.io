@@ -19,11 +19,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="shortcut icon" href="img/logo/favicon.ico">
-    
+    <link rel="stylesheet" href="css/styletablet.css">
+    <link rel="stylesheet" href="css/stylephone.css">
 
 </head>
 <body>
-
+<div class="pc">
     <div id="top_top"></div>
     <div class="navbar">
         <a href="https://guigui223.github.io/forestwud/">
@@ -327,6 +328,45 @@
     </div>
     <div id="top"><img width="30px" height="30px" src="img/icon/top.svg" alt=""></div>
 
+</div>
+
+<div class="tablet">
+    <div id="ta_top_top"></div>
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+
+
+
+</div>
+
+<div class="phone">
+
+    <div id="ph_top_top"></div>
+    
+    <div class="ph_navbar">
+        
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <!-- Swiper JS -->
     <script src="js/swiper.min.js"></script>
@@ -437,6 +477,7 @@
 
         });
 
+        // 最新消息滑動事件
         $("#new_2_1").hover(function(){
             var a = document.querySelector('#new_2_1');
             a.classList.toggle('new_3');
@@ -450,16 +491,11 @@
             a.classList.toggle('new_3');
         });
 
-            
-            
-            // $(".new_2").css("background-color","black","color-white","");
-            // },function(){
-            // $(".new_2").css("background-color","rgba(0, 0, 0, 0)");
-        
-        
         
     </script>
-    
+
+
+
     
 
 
