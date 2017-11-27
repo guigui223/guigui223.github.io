@@ -1,10 +1,14 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .pc{
         display: none; 
     }
 
     .phone{
         display: none;
+    }
+
+    .tablet{
+        display: block;
     }
 
     #ta_top_top{

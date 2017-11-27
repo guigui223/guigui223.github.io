@@ -9,6 +9,7 @@ body{
 
 .pc{
     min-width: 1200px;
+    display: block;
 }
 
 #top_top{
