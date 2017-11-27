@@ -171,21 +171,31 @@
         </div>
         <div class="new_out">
             <div class="new_1">
-                <div class="new_2">
-                    <div class="day_line"></div>
+                <div class="new_2" id="new_2_1">
+                    <div class="day">08 / 20</div>
+                    <div class="someout">新品上市</div>
+                    <div class="some">107年01月01日起塑膠袋禁用囉！看透透飲料小提袋讓你的生活更環保</div>
+                    
                 </div>
             </div>
             <div class="new_1">
-                <div class="new_2">
-                    <div class="day_line"></div>
+                <div class="new_2" id="new_2_2">
+                    <div class="day">11 / 11</div>
+                    <div class="someout">雙十一優惠</div>
+                    <div class="some">11/11 11:11p.m到00:00a.m，九木全館11%off，趕快來看看！</div>    
+                    
                 </div>
             </div>
             <div class="new_1">
-                <div class="new_2">
-                    <div class="day_line"></div>
+                <div class="new_2" id="new_2_3">
+                    <div class="day">12 / 25</div>
+                    <div class="someout">聖誕一起更快樂</div>
+                    <div class="some">聖誕節活動準備中！</div>   
+                    
                 </div>
             </div>
         </div>
+    
     </div>
 
     <div class="about" id="about">
@@ -426,6 +436,26 @@
         };
 
         });
+
+        $("#new_2_1").hover(function(){
+            var a = document.querySelector('#new_2_1');
+            a.classList.toggle('new_3');
+        });
+        $("#new_2_2").hover(function(){
+            var a = document.querySelector('#new_2_2');
+            a.classList.toggle('new_3');
+        });
+        $("#new_2_3").hover(function(){
+            var a = document.querySelector('#new_2_3');
+            a.classList.toggle('new_3');
+        });
+
+            
+            
+            // $(".new_2").css("background-color","black","color-white","");
+            // },function(){
+            // $(".new_2").css("background-color","rgba(0, 0, 0, 0)");
+        
         
         
     </script>
