@@ -13,7 +13,9 @@
         height: 1px;
         top: 0;
     }
-    body {}
+    body {
+        overflow-x: hidden;
+    }
     /* navbar */
     .ph_navbar {
         width: 100%;
@@ -63,7 +65,7 @@
     }
     .ph_nav {
         opacity: 0;
-        transition: all 0.5s ease-out;
+        transition: all 0.3s ease-out;
         height: 0;
         width: 100%;
         background-color: rgb(255, 255, 255);
@@ -311,13 +313,13 @@
         text-align: center;
         line-height: 18px;
     }
-    .pd_formout {
+    .ph_formout {
         width: 100%;
         height: 630px;
         padding-left: 50px;
         margin-top: 30px;
     }
-    .pd_form {
+    .ph_form {
         width: 100%;
         height: 80%;
         text-align: left;
@@ -325,54 +327,54 @@
         padding: 0 auto;
         margin-top: 30px;
     }
-    .pd_in_1 {
+    .ph_in_1 {
         margin-bottom: 30px;
     }
-    .pd_in_2 {
+    .ph_in_2 {
         margin-bottom: 30px;
     }
-    .pd_in_3 {
+    .ph_in_3 {
         margin-bottom: 30px;
     }
-    .pd_in_4 {
+    .ph_in_4 {
         margin-bottom: 30px;
     }
-    #pd_name {
+    #ph_name {
         height: 35px;
         width: 60%;
         background-color: #EFEFEF;
         border: 0;
         border-radius: 5px;
     }
-    #pd_email {
+    #ph_email {
         height: 35px;
         width: 60%;
         background-color: #EFEFEF;
         border: 0;
         border-radius: 5px;
     }
-    #pd_title {
+    #ph_title {
         height: 35px;
         width: 60%;
         background-color: #EFEFEF;
         border: 0;
         border-radius: 5px;
     }
-    #pd_con {
+    #ph_con {
         height: 150px;
         width: 80%;
         background-color: #EFEFEF;
         border: 0;
         border-radius: 5px;
     }
-    .pd_btn {
+    .ph_btn {
         width: 100%;
         height: 50px;
         padding-top: 10px;
         line-height: 40px;
         position: relative;
     }
-    #pd_btn {
+    #ph_btn {
         height: 40px;
         width: 70px;
         border: 0;
@@ -380,5 +382,44 @@
         background-color: rgb(114, 114, 114);
         position: absolute;
         right: 20%;
+    }
+    .ph_footer {
+        width: 100%;
+        height: 160px;
+        background-color: #EFEFEF;
+        text-align: center;
+        padding: 40px 0;
+        line-height: 20px;
+        font-size: 13px;
+    }
+    /* bottom */
+    .ph_bottom {
+        width: 100%;
+        height: 70px;
+    }
+    #ph_icon {
+        display: flex;
+    }
+    .ph_icon {
+        flex: 1;
+        text-align: center;
+        padding-top: 15px;
+    }
+    /* back to top */
+    #ph_top {
+        position: fixed;
+        right: 25px;
+        bottom: 70px;
+        display: none;
+        width: 30px;
+        height: 30px;
+        z-index: 20;
+        opacity: 0.5;
+    }
+    #ph_top.show {
+        display: block;
+    }
+    #ph_top.hide {
+        display: none;
     }
 }
