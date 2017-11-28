@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/styletablet.css">
     <link rel="stylesheet" href="css/stylephone.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
+
+    
  
 </head>
 <body>
@@ -274,7 +276,7 @@
                 <pre> Name   <input id="name" type="text" placeholder=" Name" required> E-mail <input id="email" type=" email" placeholder=" E-mail" required></pre>
                 </div>
                 <div class="in_2">
-                    <pre> title  <input id="title" type="text" placeholder=" Title" required></pre>
+                    <pre> Title  <input id="title" type="text" placeholder=" Title" required></pre>
                 </div>
                 <div class="in_3">
                     <textarea id="con" type="text" required></textarea>
@@ -331,9 +333,136 @@
 
 </div>
 
+
+
+
+
+<!-- 平板 -->
 <div class="tablet">
     <div id="ta_top_top"></div>
 
+    <!-- navbar -->
+    <div class="ta_navbar">
+        <div class="ta_forestwud">
+            <a href="https://guigui223.github.io/forestwud/">
+                九木 · Forestwud
+            </a>
+        </div>
+    
+        <div class="ta_box_a hamburger hamburger--collapse" onclick="toggle_menu()">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </div>
+    
+        
+        <!-- nav -->
+        <div class="ta_nav" id="ta_nav">
+            <a href="#ta_top_top">
+                <div style="background-color:rgb(206, 206, 206)" class="link">
+                    T o p
+                    <span style="font-size:15px;font-weight:normal"> 回 到 首 頁</span>
+                </div>
+            </a>
+            <a href="#ta_menu">
+                <div class="link">
+                    M e n u
+                    <span style="font-size:15px;font-weight:normal"> 商 品 款 式</span>
+                </div>
+            </a>
+            <a href="#ta_news">
+                <div style="background-color:rgb(206, 206, 206)" class="link">
+                    N e w s
+                    <span style="font-size:15px;font-weight:normal"> 最 新 消 息</span>
+                </div>
+            </a>
+            <a href="#ta_about">
+                <div class="link">
+                    A b o u t
+                    <span style="font-size:15px;font-weight:normal"> 關 於 九 木</span>
+                </div>
+            </a>
+            <a href="#ta_contact">
+                <div style="background-color:rgb(206, 206, 206)" class="link">
+                    C o n t a c t
+                    <span style="font-size:15px;font-weight:normal"> 悄 悄 話</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- slider -->
+    <div class="ta_slider_out">
+        <div class="ta_slider" id="ta_slider">
+    
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img width="500px" src="img/news/new02-2-w444.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="500px" src="img/news/new03-2-w444.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="500px" src="img/news/new01-2-w444.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- menu -->
+    <div class="ta_menu" id="ta_menu">
+        <div class="ta_h3">
+            <h3>Menu</h3>
+        </div>
+        <div class="ta_ruler">
+            <img width="130px" src="img/thing/01-01-w130.png" alt="">
+        </div>
+        <div class="ta_card">
+            <div class="ta_one">
+                <div class="ta_card_a" id="ta_a">
+                    <a href="">
+                        <img id="ta_a_1" src="img/bags/phone/bag01_ph.png" alt="">
+                        <h3>斜背包</h3>
+                    </a>
+                </div>
+                <div class="ta_card_a" id="ta_b">
+                    <a href="">
+                        <img id="ta_a_2" src="img/bags/phone/bag02_ph.png" alt="">
+                        <h3>手提包</h3>
+                    </a>
+                </div>
+                <div class="ta_card_a" id="ta_a">
+                    <a href="">
+                        <img id="ta_a_3" src="img/bags/phone/bag03_ph.png" alt="">
+                        <h3>手拿包</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="ta_two">
+                <div class="ta_card_a" id="ta_b">
+                    <a href="">
+                        <img id="ta_a_4" src="img/bags/phone/bag04_ph.png" alt="">
+                        <h3>後背包</h3>
+                    </a>
+                </div>
+                <div class="ta_card_a" id="ta_a">
+                    <a href="">
+                        <img id="ta_a_5" src="img/bags/phone/bag05_ph.png" alt="">
+                        <h3>小型包款</h3>
+                    </a>
+                </div>
+                <div class="ta_card_a" id="ta_b">
+                    <a href="">
+                        <img id="ta_a_6" src="img/bags/phone/bag06_ph.png" alt="">
+                        <h3>功能加購</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -341,14 +470,18 @@
 
 
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/swiper.min.js"></script>
+
+
+
 
 
 
 
 </div>
 
+
+
+<!-- 手機 -->
 <div class="phone">
 
     <div id="ph_top_top"></div>
@@ -380,146 +513,252 @@
      
         <!-- nav -->
         <div class="ph_nav" id="ph_nav">
-            <a href="">
-                <div style="background-color:#EFEFEF" class="link">
+            <a href="#ph_top_top">
+                <div style="background-color:rgb(206, 206, 206)" class="link">
                 T o p  <span style="font-size:15px;font-weight:normal"> 回 到 首 頁</span>
                 </div>
             </a>
-            <a href="">
+            <a href="#ph_menu">
                 <div class="link">
                 M e n u  <span style="font-size:15px;font-weight:normal"> 商 品 款 式</span>
                 </div>
             </a>
-            <a href="">
-                <div style="background-color:#EFEFEF" class="link">
+            <a href="#ph_news">
+                <div style="background-color:rgb(206, 206, 206)" class="link">
                 N e w s  <span style="font-size:15px;font-weight:normal"> 最 新 消 息</span>
                 </div>
             </a>
-            <a href="">
+            <a href="#ph_about">
                 <div class="link">
                 A b o u t  <span style="font-size:15px;font-weight:normal"> 關 於 九 木</span>
                 </div>
             </a>
-            <a href="">
-                <div style="background-color:#EFEFEF" class="link">
+            <a href="#ph_contact">
+                <div style="background-color:rgb(206, 206, 206)" class="link">
                 C o n t a c t  <span style="font-size:15px;font-weight:normal"> 悄 悄 話</span>
                 </div>
             </a>
         </div>
     </div>
 
-        <!-- slider -->
-        <div class="ph_slider_out">
-                <div class="ph_slider" id="ph_slider">
-            
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img width="300px" src="img/news/new02-2-w444.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img width="300px" src="img/news/new03-2-w444.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img width="300px" src="img/news/new01-2-w444.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+    <!-- slider -->
+    <div class="ph_slider_out">
+            <div class="ph_slider" id="ph_slider">
         
-            </div>
-        </div>
-
-        <!-- menu -->
-        <div class="ph_menu" id="ph_menu">
-                <div class="ph_h3">
-                    <h3>Menu</h3>
-                </div>
-                <div class="ph_ruler">
-                    <img width="80px" src="img/thing/01-01-w130.png" alt="">
-                </div>
-                <div class="ph_card">
-                    <div class="ph_one">
-                        <div class="ph_card_a">
-                            <a href="">
-                                <img id="ph_a_1" src="img/bags/phone/bag01_ph_w170.png" alt="">
-                                <div class="h3"><h3>斜背包</h3></div>
-                            </a>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img width="300px" src="img/news/new02-2-w444.png" alt="">
                         </div>
-                        <div class="ph_card_a">
-                            <a href="">
-                                <img id="ph_a_2" src="img/bags/phone/bag02_ph_w170.png" alt="">
-                                <div class="h3"><h3>手提包</h3></div>
-                            </a>
+                        <div class="swiper-slide">
+                            <img width="300px" src="img/news/new03-2-w444.png" alt="">
                         </div>
-                    </div>    
-                    <div class="ph_two">    
-                        <div class="ph_card_a" id="ph_a">
-                            <a href="">
-                                <img id="ph_a_3" src="img/bags/phone/bag03_ph_w170.png" alt="">
-                                <div class="h3"><h3>手拿包</h3></div>
-                            </a>
-                        </div>
-                        <div class="ph_card_a" id="ph_b">
-                            <a href="">
-                                <img id="ph_a_4" src="img/bags/phone/bag04_ph_w170.png" alt="">
-                                <div class="h3"><h3>後背包</h3></div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ph_three">
-                        <div class="ph_card_a" id="ph_a">
-                            <a href="">
-                                <img id="ph_a_5" src="img/bags/phone/bag05_ph_w170.png" alt="">
-                                <div class="h3_1"><h3>小型包款</h3></div>
-                            </a>
-                        </div>
-                        <div class="ph_card_a" id="ph_b">
-                            <a href="">
-                                <img id="ph_a_6" src="img/bags/phone/bag06_ph_w170.png" alt="">
-                                <div class="h3_1"><h3>功能加購</h3></div>
-                            </a>
+                        <div class="swiper-slide">
+                            <img width="300px" src="img/news/new01-2-w444.png" alt="">
                         </div>
                     </div>
                 </div>
+    
         </div>
+    </div>
 
-        <!-- news -->
-        <div class="ph_news" id="ph_news">
+    <!-- menu -->
+    <div class="ph_menu" id="ph_menu">
             <div class="ph_h3">
-                <h3>News</h3>
+                <h3>Menu</h3>
             </div>
             <div class="ph_ruler">
                 <img width="80px" src="img/thing/01-01-w130.png" alt="">
             </div>
-            <div class="ph_new_out">
-                <div class="ph_new_1">
-                    <div class="ph_new_2" id="ph_new_2_1">
-                        <div class="ph_day">08 / 20</div>
-                        <div class="ph_someout">新品上市</div>
-                        <div class="ph_some">107年01月01日起塑膠袋禁用囉！看<br>
-                            透透飲料小提袋讓你的生活更環保</div>
-        
+            <div class="ph_card">
+                <div class="ph_one">
+                    <div class="ph_card_a">
+                        <a href="">
+                            <img id="ph_a_1" src="img/bags/phone/bag01_ph_w170.png" alt="">
+                            <div class="h3"><h3>斜背包</h3></div>
+                        </a>
+                    </div>
+                    <div class="ph_card_a">
+                        <a href="">
+                            <img id="ph_a_2" src="img/bags/phone/bag02_ph_w170.png" alt="">
+                            <div class="h3"><h3>手提包</h3></div>
+                        </a>
+                    </div>
+                </div>    
+                <div class="ph_two">    
+                    <div class="ph_card_a" id="ph_a">
+                        <a href="">
+                            <img id="ph_a_3" src="img/bags/phone/bag03_ph_w170.png" alt="">
+                            <div class="h3"><h3>手拿包</h3></div>
+                        </a>
+                    </div>
+                    <div class="ph_card_a" id="ph_b">
+                        <a href="">
+                            <img id="ph_a_4" src="img/bags/phone/bag04_ph_w170.png" alt="">
+                            <div class="h3"><h3>後背包</h3></div>
+                        </a>
                     </div>
                 </div>
-                <div class="ph_new_1">
-                    <div class="ph_new_2" id="ph_new_2_2">
-                        <div class="ph_day">11 / 11</div>
-                        <div class="ph_someout">雙十一優惠</div>
-                        <div class="ph_some">11/11 11:11p.m到00:00a.m，九木全館11%off，趕快來看看！</div>
-        
+                <div class="ph_three">
+                    <div class="ph_card_a" id="ph_a">
+                        <a href="">
+                            <img id="ph_a_5" src="img/bags/phone/bag05_ph_w170.png" alt="">
+                            <div class="h3_1"><h3>小型包款</h3></div>
+                        </a>
                     </div>
-                </div>
-                <div class="ph_new_1">
-                    <div class="ph_new_2" id="ph_new_2_3">
-                        <div class="ph_day">12 / 25</div>
-                        <div class="ph_someout">聖誕一起更快樂</div>
-                        <div class="ph_some">聖誕節活動準備中！</div>
-        
+                    <div class="ph_card_a" id="ph_b">
+                        <a href="">
+                            <img id="ph_a_6" src="img/bags/phone/bag06_ph_w170.png" alt="">
+                            <div class="h3_1"><h3>功能加購</h3></div>
+                        </a>
                     </div>
                 </div>
             </div>
-        
+    </div>
+
+    <!-- news -->
+    <div class="ph_news" id="ph_news">
+        <div class="ph_h3">
+            <h3>News</h3>
         </div>
+        <div class="ph_ruler">
+            <img width="80px" src="img/thing/01-01-w130.png" alt="">
+        </div>
+        <div class="ph_new_out">
+            <div class="ph_new_1">
+                <div class="ph_new_2" id="ph_new_2_1">
+                    <div class="ph_day">08 / 20</div>
+                    <div class="ph_someout">新品上市</div>
+                    <div class="ph_some">107年01月01日起塑膠袋禁用囉！看<br>
+                        透透飲料小提袋讓你的生活更環保</div>
+    
+                </div>
+            </div>
+            <div class="ph_new_1">
+                <div class="ph_new_2" id="ph_new_2_2">
+                    <div class="ph_day">11 / 11</div>
+                    <div class="ph_someout">雙十一優惠</div>
+                    <div class="ph_some">11/11 11:11p.m到00:00a.m，九木全館11%off，趕快來看看！</div>
+    
+                </div>
+            </div>
+            <div class="ph_new_1">
+                <div class="ph_new_2" id="ph_new_2_3">
+                    <div class="ph_day">12 / 25</div>
+                    <div class="ph_someout">聖誕一起更快樂</div>
+                    <div class="ph_some">聖誕節活動準備中！</div>
+    
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <!-- about -->
+    <div class="ph_about" id="ph_about">
+        <div class="ph_h3">
+            <h3>About</h3>
+        </div>
+        <div class="ph_ruler">
+            <img width="80px" src="img/thing/01-01-w130.png" alt="">
+        </div>
+        <div class="ph_about_1">
+            <p>　　2014年04月，兩個還在就讀大二的女大生，因為總是找不到功能齊全又符合自己性格的包包，決定自己動手製作，並創立了九木·Forestwud這間手工布包。</br> 　　以簡單的剪裁設計，可以客訂的便利性經營著這家小店。 不論是聯絡客服、打版採購、剪裁製作、打包出貨、拍照上架
+            等等，全都由這兩個女大生親力親為，希望能將手作的溫度帶給那些找上她們的人。</p>
+        </div>
+        <div class="ph_about_2">   
+        </div>
+        <div class="ph_about_3">
+            <p>注意事項</br> 1.依付款順序製作商品及出貨</br> 2.商品付款開始計算，製作時間為七日</br> 3.商品皆為手作，可能會有些許誤差</br> 4.照片會有小小色差</br> 5.商品有標記尺寸，可以比對是否是確切的size呦</br> 6.如需要客製化服務，可以先來信詢問</br> 7.部分商品不提供拉鍊及口袋(若有提供會標示)請買家下單前務必確認清楚喔</br> 8.本館商品為訂製商品,不提供更換的服務喔</p>
+        </div>
+        <div class="ph_about_4">
+            <div class="ph_about_4in">
+                <p>徘徊森林的氣息</br>留戀原木的純粹</br> 擺脫城市的束縛</br> 嚮往簡單的設計</br> 貼近你我的生活</br> 讓九木所有產品</br> 全都成為生活中</br> 不可或缺的陪伴</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- contact -->
+    <div class="ph_contact" id="ph_contact">
+        <div class="ph_h3">
+            <h3>Contact</h3>
+        </div>
+        <div class="ph_ruler">
+            <img width="80px" src="img/thing/01-01-w130.png" alt="">
+        </div>
+        <div class="ph_formout">
+            <div class="ph_form">
+                <div class="ph_in_1">
+                    <pre> Name    <input id="ph_name" type="text" placeholder=" Name" required> </pre>
+                </div>
+                <div class="ph_in_2">
+                    <pre> E-mail  <input id="ph_email" type=" email" placeholder=" E-mail" required></pre>
+                </div>
+                <div class="ph_in_3">
+                    <pre> Title   <input id="ph_title" type="text" placeholder=" Title" required></pre>
+                </div>
+                <div class="ph_in_4">
+                    <textarea id="ph_con" type="text" required></textarea>
+                </div>
+                <div class="ph_btn">
+                    <button id="ph_btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="ph_footer">
+        <div class="ph_foot">九木 · Forestwud</div>
+        <div class="ph_foot">創立 2014 / 04</div>
+        <div class="ph_foot">forestwud.1994@gmail.com</div>
+        <div class="ph_foot"></div>
+        <div class="ph_foot">
+            <img width="10px" height="10px" src="img/thing/copyright.svg" alt=""> F O R E S T W U D </div>
+    
+    </div>
+
+    <!-- bottom -->
+
+    
+    <div class="ph_bottom">
+        <div id="ph_icon">
+            <div class="ph_icon">
+                <a href="https://www.facebook.com/forestwud.1994/?ref=bookmarks">
+                    <img width="40px" height="40px" src="img/icon/facebook icon.svg.svg" alt="">
+                </a>
+            </div>
+            
+            <div class="ph_icon">
+                <a href="https://www.instagram.com/forestwud/">
+                    <img width="40px" height="40px" src="img/icon/instagram icon.svg.svg" alt="">
+                </a>
+            </div>
+            
+            <div class="ph_icon">
+                <a href="https://www.pinkoi.com/user/forestwud">
+                    <img width="40px" height="40px" src="img/icon/pinkoi icon-01.svg" alt="">
+                </a>
+            </div>
+            
+            <div class="ph_icon">
+                <a href="https://tw.creema.net/c/forestwud">
+                    <img width="40px" height="40px" src="img/icon/creema icon-01.svg" alt="">
+                </a>
+            </div>
+           
+            <div class="ph_icon">
+                <a href="https://www.rakuten.com.tw/shop/forestwud/">
+                    <img width="40px" height="40px" src="img/icon/Rakuten icon-01.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="ph_top">
+        <img width="40px" height="40px" src="img/icon/top.svg" alt="">
+    </div>
 
 
     
@@ -678,18 +917,54 @@
             });
         
         // 最新消息滑動事件
-            $("#ph_new_2_1").touchstart(function () {
+            $("#ph_new_2_1").hover(function () {
                 var a = document.querySelector('#ph_new_2_1');
                 a.classList.toggle('ph_new_3');
             });
-            $("#ph_new_2_2").touchstart(function () {
+            $("#ph_new_2_2").hover(function () {
                 var a = document.querySelector('#ph_new_2_2');
                 a.classList.toggle('ph_new_3');
             });
-            $("#ph_new_2_3").touchstart(function () {
+            $("#ph_new_2_3").hover(function () {
                 var a = document.querySelector('#ph_new_2_3');
                 a.classList.toggle('ph_new_3');
             });
+        
+        // back to top
+        $('#ph_top').click(function () {
+                var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+                $body.animate({
+                    scrollTop: 0
+                }, 300);
+
+                return false;
+            });
+
+            $(window).scroll(function () {
+
+                var top = $(window).scrollTop()
+
+                if (top > 10) {
+
+                    $('#ph_top').fadeIn("slow");
+                } else {
+                    $('#ph_top').fadeOut("slow");
+                };
+
+            });
+
+    //tablet版
+    function toggle_menu() {
+            var a = document.querySelector('#ta_nav');
+            a.classList.toggle('ta_nav_1');
+        }
+
+        var $hamburger = $(".hamburger");
+        $hamburger.on("click", function (e) {
+            $hamburger.toggleClass("is-active");
+            // Do something else, like open/close menu
+        });  
+            
         
         
     </script>

@@ -13,24 +13,27 @@
         height: 1px;
         top: 0;
     }
-    body {}
+    body {
+        overflow-x: hidden;
+    }
     /* navbar */
     .ph_navbar {
         width: 100%;
-        height: 80px;
+        height: 60px;
         background-color: rgb(255, 255, 255);
         /* position: relative; */
         position: fixed;
         top: 0;
         z-index: 1000;
         box-shadow: 0px 0px 8px #000;
+        min-width: 370px;
     }
     .ph_forestwud {
         font-size: 20px;
         text-decoration: none;
         letter-spacing: 6px;
         font-weight: bold;
-        line-height: 80px;
+        line-height: 60px;
         padding-left: 50px;
     }
     .ph_forestwud a {
@@ -39,8 +42,8 @@
     }
     .box_a {
         position: absolute;
-        top: 12px;
-        right: 20px;
+        top: 5px;
+        right: 8px;
     }
     /* .line {
         width: 30px;
@@ -54,16 +57,16 @@
         text-align: center;
         line-height: 60px;
     }
-    .ph_nav .link:nth-child(5) {
-        shadow: 0 0px 8px black;
-    }
+    /* .ph_nav .link:nth-child(5) {
+        box-shadow: 0 4px 2px -2px black;
+    } */
     a {
         text-decoration: none;
         color: rgb(0, 0, 0);
     }
     .ph_nav {
         opacity: 0;
-        transition: all 0.5s ease-out;
+        transition: all 0.3s ease-out;
         height: 0;
         width: 100%;
         background-color: rgb(255, 255, 255);
@@ -82,7 +85,7 @@
     .ph_slider_out {
         width: 100%;
         height: 550px;
-        margin-top: 0px;
+        margin-top: 100px;
     }
     .ph_slider {
         width: 100%;
@@ -196,12 +199,12 @@
         width: 100%;
         height: 100%;
         /* background-color: rgba(0, 0, 0, 0.158);  */
-        transition-duration: 0.5s;
+        transition-duration: 0.3s;
     }
     .ph_new_3 {
-        /* background-color: black; */
+        background-color: black;
         color: white;
-        transform: translateX(20px);
+        transform: translateX(5px);
     }
     .ph_new_2 .ph_day {
         float: left;
@@ -220,6 +223,8 @@
         line-height: 88px;
         font-size: 18px;
         font-weight: bold;
+        padding-top: 15px;
+        padding-left: 15px;
     }
     .ph_new_2 .ph_some {
         float: left;
@@ -229,5 +234,193 @@
         text-align: left;
         line-height: 28px;
         font-size: 13px;
+        padding-left: 15px;
+    }
+    /* about */
+    .ph_about {
+        width: 100%;
+        height: 1400px;
+        position: relative;
+        background-color: rgb(255, 255, 255)
+    }
+    .ph_about .ph_h3 h3 {
+        margin: 0;
+        padding-top: 30px;
+    }
+    .ph_about .ph_h3 {
+        text-align: center;
+        line-height: 18px;
+    }
+    .ph_about_1 {
+        width: 100%;
+        height: 290px;
+        background-color: #EFEFEF;
+        margin-top: 30px;
+        text-align: left;
+        line-height: 28px;
+        font-size: 14px;
+        padding: 23px;
+    }
+    .ph_about_2 {
+        width: 100%;
+        height: 280px;
+        background-color: #EFEFEF;
+        background-image: url("img/about/about01-w600.png");
+        background-size: cover;
+    }
+    .ph_about_3 {
+        width: 100%;
+        height: 370px;
+        background-color: #EFEFEF;
+        text-align: left;
+        line-height: 28px;
+        font-size: 14px;
+        padding: 29px;
+    }
+    .ph_about_4 {
+        width: 100%;
+        height: 400px;
+        background-color: #EFEFEF;
+        background-image: url("img/about/about04-w768.png");
+        background-size: cover;
+        /* position: relative; */
+        padding-top: 60px;
+    }
+    .ph_about_4in {
+        width: 40%;
+        height: 240px;
+        background-color: rgba(255, 255, 255, 0.774);
+        text-align: center;
+        padding: 2px;
+        /* position: absolute; */
+        margin: auto;
+        line-height: 25px;
+        letter-spacing: 1px;
+        font-weight: 20px;
+        border-radius: 15px;
+    }
+    /* contact */
+    .ph_contact {
+        width: 100%;
+        height: 580px;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+    }
+    .ph_contact .ph_h3 h3 {
+        margin: 0;
+        padding-top: 30px;
+    }
+    .ph_contact .ph_h3 {
+        text-align: center;
+        line-height: 18px;
+    }
+    .ph_formout {
+        width: 100%;
+        height: 630px;
+        padding-left: 50px;
+        margin-top: 30px;
+    }
+    .ph_form {
+        width: 100%;
+        height: 80%;
+        text-align: left;
+        font-size: 15px;
+        padding: 0 auto;
+        margin-top: 30px;
+    }
+    .ph_in_1 {
+        margin-bottom: 30px;
+    }
+    .ph_in_2 {
+        margin-bottom: 30px;
+    }
+    .ph_in_3 {
+        margin-bottom: 30px;
+    }
+    .ph_in_4 {
+        margin-bottom: 30px;
+    }
+    #ph_name {
+        height: 35px;
+        width: 60%;
+        background-color: #EFEFEF;
+        border: 0;
+        border-radius: 5px;
+    }
+    #ph_email {
+        height: 35px;
+        width: 60%;
+        background-color: #EFEFEF;
+        border: 0;
+        border-radius: 5px;
+    }
+    #ph_title {
+        height: 35px;
+        width: 60%;
+        background-color: #EFEFEF;
+        border: 0;
+        border-radius: 5px;
+    }
+    #ph_con {
+        height: 150px;
+        width: 80%;
+        background-color: #EFEFEF;
+        border: 0;
+        border-radius: 5px;
+    }
+    .ph_btn {
+        width: 100%;
+        height: 50px;
+        padding-top: 10px;
+        line-height: 40px;
+        position: relative;
+    }
+    #ph_btn {
+        height: 40px;
+        width: 70px;
+        border: 0;
+        border-radius: 30px;
+        background-color: rgb(114, 114, 114);
+        position: absolute;
+        right: 20%;
+    }
+    .ph_footer {
+        width: 100%;
+        height: 160px;
+        background-color: #EFEFEF;
+        text-align: center;
+        padding: 40px 0;
+        line-height: 20px;
+        font-size: 13px;
+    }
+    /* bottom */
+    .ph_bottom {
+        width: 100%;
+        height: 70px;
+    }
+    #ph_icon {
+        display: flex;
+    }
+    .ph_icon {
+        flex: 1;
+        text-align: center;
+        padding-top: 15px;
+    }
+    /* back to top */
+    #ph_top {
+        position: fixed;
+        right: 25px;
+        bottom: 70px;
+        display: none;
+        width: 30px;
+        height: 30px;
+        z-index: 20;
+        opacity: 0.5;
+    }
+    #ph_top.show {
+        display: block;
+    }
+    #ph_top.hide {
+        display: none;
     }
 }

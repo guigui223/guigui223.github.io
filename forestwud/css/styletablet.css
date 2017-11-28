@@ -1,41 +1,160 @@
 @media screen and (max-width: 1024px) {
-    .pc{
-        display: none; 
-    }
-
-    .phone{
+    .pc {
         display: none;
     }
-
-    .tablet{
+    .phone {
+        display: none;
+    }
+    .tablet {
         display: block;
     }
-
-    #ta_top_top{
+    #ta_top_top {
         width: 100%;
         height: 1px;
         top: 0;
     }
+    body {
+        overflow-x: hidden;
+    }
+    /* navbar */
+    .ta_navbar {
+        width: 100%;
+        height: 80px;
+        background-color: #efefef;
+        /* position: relative; */
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0px 0px 8px #000;
+        min-width: 370px;
+    }
+    .ta_forestwud {
+        font-size: 20px;
+        text-decoration: none;
+        letter-spacing: 6px;
+        font-weight: bold;
+        line-height: 80px;
+        padding-left: 50px;
+    }
+    .ta_forestwud a {
+        text-decoration: none;
+        color: black;
+    }
+    .ta_box_a {
+        position: absolute;
+        top: 10px;
+        right: 8px;
+    }
+    /* .line {
+        width: 30px;
+        border: 2px solid rgb(102, 102, 102);
+        margin-bottom: 5px;
+    } */
+    .ta_nav .link {
+        /* display: block; */
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+    }
+    /* .ph_nav .link:nth-child(5) {
+        box-shadow: 0 4px 2px -2px black;
+    } */
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    .ta_nav {
+        opacity: 0;
+        transition: all 0.3s ease-out;
+        height: 0;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        float: left;
+        overflow: hidden;
+    }
+    .ta_nav_1 {
+        opacity: 1;
+        height: 300px;
+    }
+    .link {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* slider */
+    .ta_slider_out {
+        width: 100%;
+        height: 550px;
+        margin-top: 100px;
+    }
+    .ta_slider {
+        width: 100%;
+        height: 550px;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+    }
+
+    /* mene */
+    .ta_menu {
+        width: 100%;
+        height: 700px;
+        position: relative;
+        margin-top: 30px;
+    }
+    .ta_menu .ta_h3 h3 {
+        margin: 0;
+    }
+    .ta_menu .ta_h3 {
+        text-align: center;
+        line-height: 18px;
+    }
+    .ta_ruler {
+        text-align: center;
+        line-height: 15px;
+        /* margin-bottom:40px;  */
+    }
+    /* card */
+    .ta_card {
+        width: 80%;
+        height: 620px;
+        /* background-color: #eee; */
+        margin: 0 auto;
+        bottom: 20px;
+        /* left: 140px; */
+        margin-bottom: 50px;
+    }
+    .ta_card .ta_one {
+        display: flex;
+    }
+    .ta_card .ta_two {
+        display: flex;
+    }
+    .ta_card .ta_card_a {
+        flex: 1;
+        text-align: center;
+        position: relative;
+        margin-top: 50px;
+    }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .ta_card .ta_card_a h3 {
+        
+        text-decoration: none;
+        position: absolute;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+    
+    /* news */
+    
+    
 }
