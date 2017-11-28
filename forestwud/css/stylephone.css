@@ -233,4 +233,152 @@
         font-size: 13px;
         padding-left: 15px;
     }
+    /* about */
+    .ph_about {
+        width: 100%;
+        height: 1400px;
+        position: relative;
+        background-color: rgb(255, 255, 255)
+    }
+    .ph_about .ph_h3 h3 {
+        margin: 0;
+        padding-top: 30px;
+    }
+    .ph_about .ph_h3 {
+        text-align: center;
+        line-height: 18px;
+    }
+    .ph_about_1 {
+        width: 100%;
+        height: 290px;
+        background-color: #EFEFEF;
+        margin-top: 30px;
+        text-align: left;
+        line-height: 28px;
+        font-size: 14px;
+        padding: 29px;
+    }
+    .ph_about_2 {
+        width: 100%;
+        height: 280px;
+        background-color: #EFEFEF;
+        background-image: url("img/about/about01-w600.png");
+        background-size: cover;
+    }
+    .ph_about_3 {
+        width: 100%;
+        height: 370px;
+        background-color: #EFEFEF;
+        text-align: left;
+        line-height: 28px;
+        font-size: 14px;
+        padding: 29px;
+    }
+    .ph_about_4 {
+        width: 100%;
+        height: 400px;
+        background-color: #EFEFEF;
+        background-image: url("img/about/about04-w768.png");
+        background-size: cover;
+        /* position: relative; */
+        padding-top: 80px;
+    }
+    .ph_about_4in {
+        width: 40%;
+        height: 240px;
+        background-color: rgba(255, 255, 255, 0.774);
+        text-align: center;
+        padding: 2px;
+        /* position: absolute; */
+        margin: auto;
+        line-height: 25px;
+        letter-spacing: 1px;
+        font-weight: 20px;
+        border-radius: 15px;
+    }
+    /* contact */
+    .ph_contact {
+        width: 100%;
+        height: 580px;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+    }
+    .ph_contact .ph_h3 h3 {
+        margin: 0;
+        padding-top: 30px;
+    }
+    .ph_contact .ph_h3 {
+        text-align: center;
+        line-height: 18px;
+    }
+    .pd_formout {
+        width: 100%;
+        height: 630px;
+        padding-left: 50px;
+        margin-top: 30px;
+    }
+    .pd_form {
+        width: 100%;
+        height: 80%;
+        text-align: left;
+        font-size: 15px;
+        padding: 0 auto;
+        margin-top: 30px;
+    }
+    .pd_in_1 {
+        margin-bottom: 30px;
+    }
+    .pd_in_2 {
+        margin-bottom: 30px;
+    }
+    .pd_in_3 {
+        margin-bottom: 30px;
+    }
+    .pd_in_4 {
+        margin-bottom: 30px;
+    }
+    #pd_name {
+        height: 35px;
+        width: 60%;
+        background-color: #EFEFEF;
+        border: 0;
+        border-radius: 5px;
+    }
+    #pd_email {
+        height: 35px;
+        width: 60%;
+        background-color: #EFEFEF;
+        border: 0;
+        border-radius: 5px;
+    }
+    #pd_title {
+        height: 35px;
+        width: 60%;
+        background-color: #EFEFEF;
+        border: 0;
+        border-radius: 5px;
+    }
+    #pd_con {
+        height: 150px;
+        width: 80%;
+        background-color: #EFEFEF;
+        border: 0;
+        border-radius: 5px;
+    }
+    .pd_btn {
+        width: 100%;
+        height: 50px;
+        padding-top: 10px;
+        line-height: 40px;
+        position: relative;
+    }
+    #pd_btn {
+        height: 40px;
+        width: 70px;
+        border: 0;
+        border-radius: 30px;
+        background-color: rgb(114, 114, 114);
+        position: absolute;
+        right: 20%;
+    }
 }
