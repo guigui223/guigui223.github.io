@@ -341,6 +341,130 @@
 <div class="tablet">
     <div id="ta_top_top"></div>
 
+    <!-- navbar -->
+    <div class="ta_navbar">
+        <div class="ta_forestwud">
+            <a href="https://guigui223.github.io/forestwud/">
+                九木 · Forestwud
+            </a>
+        </div>
+    
+        <div class="ta_box_a hamburger hamburger--collapse" onclick="toggle_menu()">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </div>
+    
+        
+        <!-- nav -->
+        <div class="ta_nav" id="ta_nav">
+            <a href="#ta_top_top">
+                <div style="background-color:rgb(206, 206, 206)" class="link">
+                    T o p
+                    <span style="font-size:15px;font-weight:normal"> 回 到 首 頁</span>
+                </div>
+            </a>
+            <a href="#ta_menu">
+                <div class="link">
+                    M e n u
+                    <span style="font-size:15px;font-weight:normal"> 商 品 款 式</span>
+                </div>
+            </a>
+            <a href="#ta_news">
+                <div style="background-color:rgb(206, 206, 206)" class="link">
+                    N e w s
+                    <span style="font-size:15px;font-weight:normal"> 最 新 消 息</span>
+                </div>
+            </a>
+            <a href="#ta_about">
+                <div class="link">
+                    A b o u t
+                    <span style="font-size:15px;font-weight:normal"> 關 於 九 木</span>
+                </div>
+            </a>
+            <a href="#ta_contact">
+                <div style="background-color:rgb(206, 206, 206)" class="link">
+                    C o n t a c t
+                    <span style="font-size:15px;font-weight:normal"> 悄 悄 話</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- slider -->
+    <div class="ta_slider_out">
+        <div class="ta_slider" id="ta_slider">
+    
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img width="500px" src="img/news/new02-2-w444.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="500px" src="img/news/new03-2-w444.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="500px" src="img/news/new01-2-w444.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- menu -->
+    <div class="ta_menu" id="ta_menu">
+        <div class="ta_h3">
+            <h3>Menu</h3>
+        </div>
+        <div class="ta_ruler">
+            <img width="130px" src="img/thing/01-01-w130.png" alt="">
+        </div>
+        <div class="ta_card">
+            <div class="ta_one">
+                <div class="ta_card_a" id="ta_a">
+                    <a href="">
+                        <img id="ta_a_1" src="img/bags/phone/bag01_ph.png" alt="">
+                        <h3>斜背包</h3>
+                    </a>
+                </div>
+                <div class="ta_card_a" id="ta_b">
+                    <a href="">
+                        <img id="ta_a_2" src="img/bags/phone/bag02_ph.png" alt="">
+                        <h3>手提包</h3>
+                    </a>
+                </div>
+                <div class="ta_card_a" id="ta_a">
+                    <a href="">
+                        <img id="ta_a_3" src="img/bags/phone/bag03_ph.png" alt="">
+                        <h3>手拿包</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="ta_two">
+                <div class="ta_card_a" id="ta_b">
+                    <a href="">
+                        <img id="ta_a_4" src="img/bags/phone/bag04_ph.png" alt="">
+                        <h3>後背包</h3>
+                    </a>
+                </div>
+                <div class="ta_card_a" id="ta_a">
+                    <a href="">
+                        <img id="ta_a_5" src="img/bags/phone/bag05_ph.png" alt="">
+                        <h3>小型包款</h3>
+                    </a>
+                </div>
+                <div class="ta_card_a" id="ta_b">
+                    <a href="">
+                        <img id="ta_a_6" src="img/bags/phone/bag06_ph.png" alt="">
+                        <h3>功能加購</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 
@@ -829,7 +953,17 @@
 
             });
 
-            
+    //tablet版
+    function toggle_menu() {
+            var a = document.querySelector('#ta_nav');
+            a.classList.toggle('ta_nav_1');
+        }
+
+        var $hamburger = $(".hamburger");
+        $hamburger.on("click", function (e) {
+            $hamburger.toggleClass("is-active");
+            // Do something else, like open/close menu
+        });  
             
         
         
