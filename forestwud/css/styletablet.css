@@ -5,7 +5,7 @@
     .phone {
         display: none;
     }
-    .tablet {
+    #tablet {
         display: block;
     }
     #ta_top_top {
