@@ -236,8 +236,8 @@
     
     .ta_about{
         width: 100%;
-        height: 1200px;
-        background-image: url("img/about/bg-11.svg");
+        height: 1030px;
+        background-image: url("img/about/bg-08.svg");
         background-size:contain; 
         position: relative;
     }
@@ -254,7 +254,7 @@
 
 
     .ta_about_1{
-        width: 55%;
+        width: 54%;
         height: 420px;
         background-color: #EFEFEF;
         position: absolute;
@@ -264,41 +264,42 @@
     }
 
     .ta_text_1{
-        width: 80%;
+        width: 60%;
         height: 420px;
-        line-height: 43px;
+        line-height: 30px;
         margin: auto;
-        margin-top: 60px;
+        margin-top: 45px;
         letter-spacing: 2px;
         font-size: 14px;
     }
 
     .ta_about_2{
-        width: 35%;
-        height: 450px;
+        width: 42%;
+        height: 380px;
         background-color: #EFEFEF;
         position: absolute;
-        top: 200px;
+        top: 270px;
         right: 0;
         border-radius: 35px 0 0 35px; 
     }
 
     .ta_text_2{
-        width: 65%;
+        width: 80%;
         height: 300px;
-        line-height: 30px;
+        line-height: 25px;
         margin: auto;
         margin-top: 30px;
         letter-spacing: 2px;
+        font-size: 12px;
     }
 
     .ta_about_3{
-        width: 43%;
+        width: 48%;
         height: 400px;
         background-image: url("img/about/about01-w600.png");
         background-size:cover;
         position: absolute;
-        top: 860px;
+        top: 580px;
         border-radius: 0 35px 35px 0 ; 
     }
 
@@ -306,8 +307,8 @@
         width: 18%;
         height: 300px;
         position: absolute;
-        top: 930px;
-        left:590px; 
+        top: 660px;
+        left:50%; 
     }
 
     .ta_text_4{
@@ -318,6 +319,140 @@
         margin-top: 30px;
         letter-spacing: 2px;
     }
+
+    /* contact */
+    .ta_contact{
+        width: 100%;
+        height: 650px;
+        background-color: #EFEFEF;
+        position: relative;
+    }
+
+    .ta_contact .ta_h3{
+        text-align: center;
+        line-height: 18px;
+    }
+
+    .ta_contact .ta_h3 h3{
+        margin: 0;
+        padding-top:30px; 
+    }
+
+    .ta_form{
+        width: 65%;
+        height: 400px;
+        /* background-color: rgb(56, 53, 53); */
+        padding-top: 30px; 
+        margin: auto;
+    }
+
+    .ta_in_1{
+        width: 100%;
+        height: 70px;
+        display: inline-block;
+        /* border: 1px solid rgb(71, 71, 71); */
+        text-align: center;
+        line-height: 70px;
+        font-size: 14px;
+    }
+
+    #ta_name{
+        width: 20%;
+        height: 50px;
+        border-radius: 15px;
+        padding-left: 10px;
+        border: none; 
+    }
+
+    #ta_email{
+        width: 50%;
+        height: 50px;
+        border-radius: 15px;
+        padding-left: 10px;
+        border: none;  
+    }
+
+    .ta_in_2{
+        width: 100%;
+        height: 90px;
+        /* border: 1px solid rgb(71, 71, 71); */
+        text-align: center;
+        line-height: 90px;
+        font-size: 14px;
+    }
+
+    #ta_title{
+        width: 80%;
+        height: 50px;
+        border-radius: 15px;
+        padding-left: 10px;
+        border: none;  
+    }
+
+    .ta_in_3{
+        width: 100%;
+        height: 300px;
+        /* border: 1px solid rgb(71, 71, 71); */
+        text-align: center;
+        line-height: 300px;
+        font-size: 14px;
+    }
+
+    #ta_con{
+        width: 90%;
+        height: 250px;
+        border-radius: 15px;
+        padding: 18px;
+        font-size: 18px;
+        border: none; 
+        margin-top: 10px; 
+    }
+
+    .ta_btn{
+        width: 100%;
+        height: 40px;
+        /* border: 1px solid rgb(71, 71, 71); */
+        text-align: center;
+        line-height: 40px;
+        font-size: 14px;
+        position: relative
+    }
+
+    .ta_btn #ta_btn{
+        width: 80px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: rgb(138, 138, 138);
+        border: none;
+        position: absolute;
+        right: 8%;
+        
+    }
+
+    /* footer */
+    .ta_footer{
+        width: 100%;
+        height: 180px;
+        /* border: 1px solid black; */
+        text-align: center;
+        margin-top: 75px;
+    }
+
+    .ta_foot{
+        width: 100%;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        letter-spacing: 1px;
+        font-size: 13px;
+    }
+
+    .ta_bottom{
+        width: 100%;
+        height: 60px;
+        background-color: #EFEFEF;
+    }
+
 
 
     /* back to top */
