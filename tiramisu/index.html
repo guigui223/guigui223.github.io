@@ -7,26 +7,81 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/unslider.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
 
     <style>
+
+        *{
+            box-sizing: border-box;
+        }   
+        
+        body{
+            font-family: 微軟正黑體;
+        }
+
+        .logo{
+            height: 50px;
+        }
+
+        .my-slider{
+            width: 100%;
+            height: auto;
+        }
+
+        /* 最新消息 */
+        .thenews{
+            width: 100%;
+            height: 712px;
+            background-color: #E9D8BA;
+            padding: 100px 0;
+        }
+
+        .thenewscontainer{
+            width: 1024px;            
+            height: 512px;
+            margin: auto;
+        }
+        
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%; 
+        }
+
+        .gallery-top {
+            height: 100%;
+            width: 50%;
+            float: left;
+            padding: 10px;                    
+        }       
+
+        .newsimg {
+            height: 50%;
+            width: 50%;
+            float: left;
+            padding: 10px;
+            background-image: url(img/news.png);
+            background-size: contain;
+        }
+
+        .gallery-thumbs {
+            height: 50%;
+            width: 50%;            
+            padding: 10px;            
+            float: left;
+        }
+        .gallery-thumbs .swiper-slide {
+            width: 100%;
+            height: 100%;        
+        }   
     
-    body{
-        font-family: 微軟正黑體;
-    }
 
-    .logo{
-        height: 50px;
-    }
-
-    .my-slider{
-        width: 100%;
-        height: 925px;
-    }
     
     </style>
 </head>
 <body>
-
+<!-- NAV部分 -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#422C1E">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -67,7 +122,7 @@
             </div>
         </div>
     </nav>
-    
+<!-- SLIDER部分     -->
     <div class="my-slider">
         <ul>
             <li><img src="img/slider01.jpg" alt="" width="100%" height="auto"></li>
@@ -75,12 +130,37 @@
             <li><img src="img/slider03.jpg" alt="" width="100%" height="auto"></li>
         </ul>
     </div>
+<!-- 最新消息部分 -->
+    <div class="thenews">
+        <div class="thenewscontainer">
+            <div class="swiper-container gallery-top">                
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(img/slider01.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(img/slider02.jpg)"></div>    
+                </div>                
+            <!-- Add Arrows -->
+                <div class="arrow">                           
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+            </div>
+            <div class="newsimg"></div>
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(img/news_1-19.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(img/slider02-ori.jpg)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/unslider-min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script>
+
         jQuery(document).ready(function ($) {
             $('.my-slider').unslider({
                 autoplay: true,
@@ -89,6 +169,27 @@
                 arrows: false,
             });
         });
+
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            touchRatio: 0.2,
+            slideToClickedSlide: true,
+        });
+
+        galleryTop.controller.control = galleryThumbs;
+
+        galleryThumbs.controller.control = galleryTop;
+
     </script>
 </body>
 </html>
