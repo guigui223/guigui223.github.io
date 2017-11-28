@@ -198,12 +198,12 @@
         width: 100%;
         height: 100%;
         /* background-color: rgba(0, 0, 0, 0.158);  */
-        transition-duration: 0.5s;
+        transition-duration: 0.3s;
     }
     .ph_new_3 {
         background-color: black;
         color: white;
-        transform: translateX(20px);
+        transform: translateX(5px);
     }
     .ph_new_2 .ph_day {
         float: left;
