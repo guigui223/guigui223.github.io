@@ -17,7 +17,7 @@
     /* navbar */
     .ph_navbar {
         width: 100%;
-        height: 80px;
+        height: 60px;
         background-color: rgb(255, 255, 255);
         /* position: relative; */
         position: fixed;
@@ -30,7 +30,7 @@
         text-decoration: none;
         letter-spacing: 6px;
         font-weight: bold;
-        line-height: 80px;
+        line-height: 60px;
         padding-left: 50px;
     }
     .ph_forestwud a {
@@ -39,8 +39,8 @@
     }
     .box_a {
         position: absolute;
-        top: 12px;
-        right: 20px;
+        top: 5px;
+        right: 8px;
     }
     /* .line {
         width: 30px;
@@ -82,7 +82,7 @@
     .ph_slider_out {
         width: 100%;
         height: 550px;
-        margin-top: 0px;
+        margin-top: 100px;
     }
     .ph_slider {
         width: 100%;
@@ -199,7 +199,7 @@
         transition-duration: 0.5s;
     }
     .ph_new_3 {
-        /* background-color: black; */
+        background-color: black;
         color: white;
         transform: translateX(20px);
     }
@@ -220,6 +220,8 @@
         line-height: 88px;
         font-size: 18px;
         font-weight: bold;
+        padding-top: 15px;
+        padding-left: 15px;
     }
     .ph_new_2 .ph_some {
         float: left;
@@ -229,5 +231,6 @@
         text-align: left;
         line-height: 28px;
         font-size: 13px;
+        padding-left: 15px;
     }
 }

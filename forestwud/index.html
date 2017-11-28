@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/styletablet.css">
     <link rel="stylesheet" href="css/stylephone.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
+    
  
 </head>
 <body>
@@ -678,18 +679,21 @@
             });
         
         // 最新消息滑動事件
-            $("#ph_new_2_1").touchstart(function () {
+            $("#ph_new_2_1").hover(function () {
                 var a = document.querySelector('#ph_new_2_1');
                 a.classList.toggle('ph_new_3');
             });
-            $("#ph_new_2_2").touchstart(function () {
+            $("#ph_new_2_2").hover(function () {
                 var a = document.querySelector('#ph_new_2_2');
                 a.classList.toggle('ph_new_3');
             });
-            $("#ph_new_2_3").touchstart(function () {
+            $("#ph_new_2_3").hover(function () {
                 var a = document.querySelector('#ph_new_2_3');
                 a.classList.toggle('ph_new_3');
             });
+
+            
+            
         
         
     </script>
