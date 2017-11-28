@@ -203,6 +203,7 @@
     .ph_new_3 {
         background-color: black;
         color: white;
+        transform: translateX(5px);
     }
     .ph_new_2 .ph_day {
         float: left;
