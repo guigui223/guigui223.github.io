@@ -20,6 +20,7 @@
         background-image: url("css/img/bg.png");
         background-size: cover;
         background-attachment: fixed;
+        overflow-x: hidden;
     }
 
     
@@ -34,17 +35,22 @@
 
     .box_a{
         /* position: absolute; */
-        margin-top: 50px;
+        margin-top: 30px;
         margin-left: 10%;
+        transition-duration: 0.8s;
     }
 
     .box_b{
         /* position: absolute; */
-        margin-top: 50px;
+        margin-top: 30px;
         margin-left: 55%;
+        transition-duration: 0.8s;
     }
 
-    
+    .bottom{
+        height: 50px;
+        width: 100%;
+    }
 
     
     </style>
@@ -129,10 +135,12 @@
         <div data-aos="fade-up-left" class="box_b">
             <img width="500px" src="img/19.jpg" alt="">
         </div>
-        
+
         <div data-aos="fade-up-right" class="box_a">
             <img width="500px" src="img/20.jpg" alt="">
         </div>
+
+        <div class="bottom"></div>
 
     
 
