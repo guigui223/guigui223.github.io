@@ -1068,16 +1068,16 @@
 
         // phone版
         // 漢堡條點擊事件
-        function toggle_menu() {
-            var a = document.querySelector('#ph_nav');
-            a.classList.toggle('ph_nav_1');
-        }
+        //     function toggle_menu() {
+        //     var a = document.querySelector('#ph_nav');
+        //     a.classList.toggle('ph_nav_1');
+        // }
 
-        var $hamburger = $(".hamburger");
-            $hamburger.on("click", function (e) {
-                $hamburger.toggleClass("is-active");
-                // Do something else, like open/close menu
-            });
+            // var $hamburger = $(".hamburger");
+            // $hamburger.on("click", function (e) {
+            //     $hamburger.toggleClass("is-active");
+            //     // Do something else, like open/close menu
+            // });
         
         // 最新消息滑動事件
             $("#ph_new_2_1").hover(function () {
@@ -1117,10 +1117,12 @@
             });
 
     //tablet版
-    // 漢堡條
+    // 漢堡條(手機平板寫一起)
     function toggle_menu() {
             var a = document.querySelector('#ta_nav');
             a.classList.toggle('ta_nav_1');
+            var a = document.querySelector('#ph_nav');
+            a.classList.toggle('ph_nav_1');
         }
 
         var $hamburger = $(".hamburger");
