@@ -40,7 +40,8 @@
         }
 
         .thenewscontainer{
-            width: 1024px;            
+            max-width: 1140px;
+            width: 100%;            
             height: 512px;
             margin: auto;
         }
@@ -57,12 +58,12 @@
             height: 200px;
             float: left;
             background-color: #422C1E;
-            margin-top: 20px;
-            margin-left: 10px;
+            margin-top: 20px;            
         }
 
         .day{
-            width: 452px;
+            max-width: 432px;
+            width: 100%;
             height:55px;
             text-align: left;
             line-height: 55px;
@@ -74,7 +75,8 @@
         }
 
         .title{
-            width: 452px;
+            max-width: 432px;
+            width: 100%;
             height:35px;
             text-align: left;
             font-size: 25px;
@@ -86,7 +88,8 @@
         }
 
         .con{
-            width: 452px;
+            max-width: 432px;
+            width: 100%;
             height:70px;
             text-align: left;
             font-size: 17px;
@@ -110,6 +113,7 @@
             padding: 10px;
             background-image: url(img/news.png);
             background-size: contain;
+            background-repeat: no-repeat;
         }
 
         .gallery-thumbs {
@@ -123,7 +127,9 @@
             height: 100%;        
         } 
         .swiper-container{
-            position: relative;
+            max-width: 1024px;
+            /* width: 100%;             */           
+            margin: 0;
         }
         .arrow{
             z-index: 30;
@@ -134,13 +140,27 @@
             bottom: 5px;
             right: 40px;
         }
-        .swiper-button-next{
-            
-        }
 
-        .swiper-button-prev{
-           
-        }  
+        /* 最新消息平板版 */
+        @media screen and (max-width: 991px){
+            .swiper-container{
+                display: none;
+            }
+            .thenews{
+                padding: 50px 0;
+            }
+            .newsimg {
+                height: 50%;
+                width: 50%;
+                float: none;
+                margin: 0 auto;            
+                padding: 10px;
+                background-image: url(img/news.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }       
+
+        }
         
         /* footer */
         .footer{
@@ -231,7 +251,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="line"></div>
-                        <div class="day">2017.10.01</div>
+                        <div class="day"> 2017.10.01</div>
                         <div class="title">台南店即將開幕囉</div>
                         <div class="con">台南店即將於10/31隆重開幕，為慶祝台南店開幕，提拉米蘇兩盒優惠價只要399元！活動日期10/13-11/30，心動不如馬上行動！</div>
                     </div>
@@ -294,17 +314,6 @@
         galleryThumbs.controller.control = galleryTop;
 
     </script>
-    <!-- <script language="javascript"> 
-        var mySwiper = new Swiper('.swiper-container', {
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'fraction',
-                //type: 'bullets',
-                //type : 'progressbar',
-                //type : 'custom',
-            },
-
-        })
-    </script> -->
+    
 </body>
 </html>
