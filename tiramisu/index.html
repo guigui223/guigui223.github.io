@@ -34,9 +34,9 @@
         /* 最新消息 */
         .thenews{
             width: 100%;
-            height: 762px;
+            height: 672px;
             background-color: #E9D8BA;
-            padding: 100px 0;
+            padding: 80px 0;
         }
 
         .thenewscontainer{
@@ -141,26 +141,9 @@
             right: 40px;
         }
 
-        /* 最新消息平板版 */
-        @media screen and (max-width: 991px){
-            .swiper-container{
-                display: none;
-            }
-            .thenews{
-                padding: 50px 0;
-            }
-            .newsimg {
-                height: 50%;
-                width: 50%;
-                float: none;
-                margin: 0 auto;            
-                padding: 10px;
-                background-image: url(img/news.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-            }       
-
-        }
+        .tablenews{
+            display: none;
+        }        
         
         /* footer */
         .footer{
@@ -177,6 +160,191 @@
             text-align: center;
             padding-top: 63px;
             letter-spacing: 2px;
+        }
+
+        /* 平板版 */
+        @media screen and (max-width: 991px){
+            .swiper-container{
+                display: none;
+            }
+            .thenews{
+                padding: 50px 0;
+                height: 700px;
+            }
+            .thenewscontainer{
+                height: 512px;
+            }
+            .newsimg {
+                min-height: 200px;
+                height: 40%;
+                width: 50%;
+                float: none;
+                margin: 0 auto;            
+                padding: 10px;
+                background-image: url(img/news.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .tablenews{
+                display: block;
+                width: 50%;
+                max-width: 487px;
+                margin: 0 auto;                
+            }
+
+            .tablenews .line{
+                width: 100%;
+                height: 5px;
+                float: none;
+                background-color: #422C1E;
+                margin: 20px 0 0 0;            
+            }
+
+            .tablenews .day{
+                max-width: 487px;
+                width: 100%;
+                height:55px;
+                text-align: left;
+                line-height: 55px;
+                font-size: 25px;
+                float: none ;
+                color: #422C1E;
+                margin: 0 auto;
+            }
+
+            .tablenews .title{
+                max-width: 487px;
+                width: 100%;
+                height:35px;
+                text-align: left;
+                font-size: 25px;
+                float: none ;
+                color: #422C1E;
+                margin: 5px auto;
+                font-weight: bold;
+            }
+
+            .tablenews .con{
+                max-width: 487px;
+                width: 100%;
+                height:100px;
+                text-align: left;
+                font-size: 17px;
+                float: none ;
+                color: #422C1E;
+                margin: 5px auto;
+            }    
+
+            .footer{
+                width: 100%;
+                height: 180px;
+                background-color: #422C1E;
+            }
+
+            .text{
+                width: 100%;
+                color:white;
+                font-size: 0.95rem;
+                line-height: 20px;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 15px;
+                letter-spacing: 2px;
+            }
+
+        }
+        /* 手機板 */
+        @media screen and (max-width: 767px){
+            .swiper-container{
+                display: none;
+            }
+            .thenews{
+                padding: 15px 0;
+                height: 650px;
+            }
+            .thenewscontainer{
+                height: 600px;
+            }
+            .newsimg {
+                min-height: 20px;
+                height: 25%;
+                width: 300px;
+                float: none;
+                margin: 0 auto;            
+                padding: 10px;
+                background-image: url(img/news.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .tablenews{
+                display: block;
+                width: 50%;
+                min-width: 300px;
+                max-width: 487px;
+                margin: 0 auto;
+                padding: 10px                
+            }
+
+            .tablenews .line{
+                width: 100%;
+                height: 5px;
+                float: none;
+                background-color: #422C1E;
+                margin: 20px 0 0 0;            
+            }
+
+            .tablenews .day{
+                max-width: 487px;
+                width: 100%;
+                height:55px;
+                text-align: left;
+                line-height: 55px;
+                font-size: 22px;
+                float: none ;
+                color: #422C1E;
+                margin: 0 auto;
+            }
+
+            .tablenews .title{
+                max-width: 487px;
+                width: 100%;
+                height:35px;
+                text-align: left;
+                font-size: 22px;
+                float: none ;
+                color: #422C1E;
+                margin: 5px auto;
+                font-weight: bold;
+            }
+
+            .tablenews .con{
+                max-width: 487px;
+                width: 100%;
+                height: auto;
+                text-align: left;
+                font-size: 17px;
+                float: none ;
+                color: #422C1E;
+                margin: 5px auto;
+            }    
+
+            .footer{
+                width: 100%;
+                height: auto;
+                background-color: #422C1E;
+            }
+
+            .text{
+                width: 100%;
+                color:white;
+                font-size: 0.85rem;
+                line-height: 20px;
+                font-weight: bold;
+                text-align: center;
+                padding: 15px;
+                letter-spacing: 2px;
+            }
+
         }
 
     
@@ -247,6 +415,17 @@
                 </div>
             </div>
             <div class="newsimg"></div>
+            <div class="tablenews">
+                <div class="day"> 2017.10.01</div>
+                <div class="title">台南店即將開幕囉</div>
+                <div class="con">台南店即將於10/31隆重開幕，為慶祝台南店開幕，提拉米蘇兩盒優惠價只要399元！活動日期10/13-11/30，心動不如馬上行動！</div>
+            </div>
+            <div class="tablenews">
+                <div class="line"></div>
+                <div class="day">year.month.day</div>
+                <div class="title">標題標題標題</div>
+                <div class="con">內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容最多只能到這</div>
+            </div>
             <div class="swiper-container gallery-thumbs">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -269,7 +448,7 @@
     <!-- Footer -->
     <div class="footer">
         <div class="text">
-            <p>Copyright (C),提拉米蘇精緻蛋糕 All rights reserved.</br>總公司:花蓮市中原路738號</br>電話:03-8526722</br>傳真:03-8532827</br>(接線時間為星期一至星期五8:00~17:00)</br>信箱:ms1@tiramisu.com.tw</p>
+            <p>Copyright (C),提拉米蘇精緻蛋糕</br>All rights reserved.</br>總公司:花蓮市中原路738號</br>電話:03-8526722</br>傳真:03-8532827</br>(接線時間為星期一至星期五8:00~17:00)</br>信箱:ms1@tiramisu.com.tw</p>
         </div>
     </div>
 
