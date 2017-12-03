@@ -486,6 +486,14 @@
 
         });
 
+        galleryTop.controller.control = galleryThumbs;
+        galleryThumbs.controller.control = galleryTop;
+
+        $('#modal').on('shown.bs.modal', function (e) {
+                galleryTop.update();
+                galleryThumbs.update();
+        })
+
 
     </script>
     
