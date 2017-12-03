@@ -26,7 +26,26 @@
             height: 50px;
         }
 
-        
+        /* 店鋪資訊 */
+        .shop{
+            width: 100%;
+            max-width: 1140px;
+            margin: auto;
+            height: 3000px;
+        }
+        .shopselect{
+            width: 220px;
+            background-color: rgb(66, 44, 30);
+            height: 700px;
+            border-radius: 25px;
+            position: fixed;
+            text-align: center;
+            margin: 50px 0 0 30px;
+        }
+        .shopdetail
+
+
+
         /* footer */
         .footer{
             width: 100%;
@@ -90,7 +109,13 @@
         </div>
     </nav>
 
-
+<!-- 門市資訊 -->
+    <div class="shop">
+        <div class="shopselect">
+            div.
+        </div>
+        <div class="shopdetail"></div>
+    </div>
 
 <!-- Footer -->
     <div class="footer">
@@ -107,37 +132,6 @@
     <script src="js/swiper.min.js"></script>
     <script>
 
-        jQuery(document).ready(function ($) {
-            $('.my-slider').unslider({
-                autoplay: true,
-                infinite: true,
-                nav: false,
-                arrows: false,
-            });
-        });
-
-        var galleryTop = new Swiper('.gallery-top', {
-            spaceBetween: 10,
-            slidesPerView: 'auto',
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-
-        var galleryThumbs = new Swiper('.gallery-thumbs', {
-            spaceBetween: 10,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-            touchRatio: 0.2,
-            slideToClickedSlide: true,
-            
-            
-        });
-
-        galleryTop.controller.control = galleryThumbs;
-
-        galleryThumbs.controller.control = galleryTop;
 
     </script>
    
