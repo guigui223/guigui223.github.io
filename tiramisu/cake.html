@@ -71,6 +71,81 @@
             color: #422C1E;
         }
 
+        /* cake */
+        .cake_box{
+            display: flex;
+        }
+
+        
+        
+        
+        
+        .product{
+        border:2px solid white;
+        background-color: white;
+        border-radius: 30px;
+        overflow: hidden;
+        transition-duration: 0.2s;
+        flex: 1;
+        }
+
+        .product:hover{
+            border:2px solid rgb(255, 197, 105);
+        }
+
+        .product:focus{
+            outline: none;  
+        }
+
+        .modal-body{
+            height: 450px;
+            width: 100%;
+            /* border: 1px solid black; */
+            padding: 0;
+        }
+
+        .modal-footer{
+            width: 58%;
+            height: 160px;
+        }
+
+        .gallery-thumbs .swiper-slide{
+            width: 102.5px !important;
+            border: 1px solid #422C1E;
+        }
+
+        .cake_text{
+            height: 580px;
+            width: 35%;
+            float: left;
+            margin-top: 20px;
+            font-size: 18px;
+        
+        }
+
+        .gallery-top{
+            width: 60%;
+            float: left;
+        }
+
+        .cake_text h3{
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin: 0;
+            margin-top: 5px;
+        }
+
+        .cake_text h4{
+            font-weight: normal;
+            letter-spacing: 3px;
+            margin: 20px 0 20px 0;
+        }
+
+        .cake_text h5{
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin: 20px 0 5px 0;
+        }
 
 
 
@@ -157,6 +232,74 @@
         </div>
     </div>
 
+    <!-- cake -->
+    <div class="container">
+        <div class="cake_box">
+            <!-- Button trigger modal -->
+            <button type="button" class="product" data-toggle="modal" data-target=".bd-example-modal-lg">
+                <img src="img/PC/cake-320/c01.jpg" alt="">
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade bd-example-modal-lg" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+
+                                <div class="swiper-container gallery-top">
+                                    <div class="swiper-wrapper">
+                                        
+                                        <div class="swiper-slide">
+                                            <img width="420px" height="420px" src="img/PC/card-508/c01.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img width="420px" height="420px" src="img/PC/card-508/c01-1.jpg" alt="">
+                                        </div> 
+                                                
+                                    </div>
+                                </div>
+                                <div class="cake_text">
+                                    <p><h3>提拉米蘇蛋糕</h3><h4>NT$240</h4>進口新鮮乳酪製成慕斯，風味可口清爽，底層採用進口小麥胚芽餅製作，香味誘人，並以進口頂級可可粉鋪灑而成，若酌以一杯濃郁咖啡，閒散於午后將是絕配。<h5>規格</h5>八吋蛋糕，直徑約19公分(±1公分)<h5>備註</h5>所有蛋糕產品皆以冷凍保鮮，若蛋糕上方有白色結霜、或者內餡有碎冰皆屬正常現象，稍為退冰後即可，請安心食用。</p>
+                                </div>
+
+                        </div>
+                                            
+                        <div class="modal-footer">
+                            <!-- Swiper -->
+                            <div class="swiper-container gallery-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img width="100px" height="100px" src="img/PC/card-75/c01.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img width="100px" height="100px" src="img/PC/card-75/c01-1-75.png" alt="">
+                                    </div>  
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+
+
+
+        </div>
+        <div class="cake_name">
+
+        </div>
+
+    </div>
+
 
 
 
@@ -175,6 +318,44 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/unslider-min.js"></script>
     <script src="js/swiper.min.js"></script>
+
+    <script>
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 2,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect : 'fade',
+            fade: {
+            crossFade: false,
+            }
+
+        });
+
+
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            slidesPerView: 3,
+            touchRatio: 0.5,
+            
+            slideToClickedSlide: true,
+
+
+        });
+
+
+
+        galleryTop.controller.control = galleryThumbs;
+        galleryThumbs.controller.control = galleryTop;
+
+        $('#modal').on('shown.bs.modal', function (e) {
+            galleryTop.update();
+            galleryThumbs.update();
+        })
+    </script>
+
     
 </body>
 </html>
