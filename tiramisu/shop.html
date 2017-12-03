@@ -185,31 +185,31 @@
     <div class="shop">
         <div class="shopselect">
             <div class="shopselect_title">全台門市</div>
-            <div class="shopselecter">
+            <div class="shopselecter shophl">
                 <div class="selecterblock colorA"></div><p> 花蓮總店　 </p>
             </div>
-            <div class="shopselecter">
+            <div class="shopselecter shoptp_fs">
                 <div class="selecterblock colorB"></div><p> 台北復興店 </p>
             </div>
-            <div class="shopselecter">
+            <div class="shopselecter shoptp_cd">
                 <div class="selecterblock colorB"></div><p> 台北承德店 </p>
             </div>
-            <div class="shopselecter">
+            <div class="shopselecter shoptp_bc">
                 <div class="selecterblock colorB"></div><p> 台北板橋店 </p>
             </div>
-            <div class="shopselecter">
+            <div class="shopselecter shoptu">
                 <div class="selecterblock colorB"></div><p> 桃園旗艦店 </p>
             </div>
-            <div class="shopselecter">
+            <div class="shopselecter shoptc">
                 <div class="selecterblock colorA"></div><p> 台中旗艦店 </p>
             </div>
-            <div class="shopselecter">
+            <div class="shopselecter shopch">
                 <div class="selecterblock colorA"></div><p> 彰化旗艦店 </p>
             </div>
-            <div class="shopselecter">
+            <div class="shopselecter shoptn">
                 <div class="selecterblock colorB"></div><p> 台南旗艦店 </p>
             </div>
-            <div class="shopselecter">
+            <div class="shopselecter shopks">
                 <div class="selecterblock colorB"></div><p> 高雄旗艦店 </p>
             </div>
             <div style="clear:both"></div>
@@ -448,8 +448,71 @@
                 position: uluru,
                 map: map
             });
-
         }
+
+        $('.shophl').click(function(){		
+		    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		    $body.animate({
+			    scrollTop: 0
+		    }, 600); 
+		    return false;
+	    });
+        $('.shoptp_fs').click(function(){		
+		    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		    $body.animate({
+			    scrollTop: 550
+		    }, 600); 
+		    return false;
+	    });
+        $('.shoptp_cd').click(function(){		
+		    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		    $body.animate({
+			    scrollTop: 960
+		    }, 600); 
+		    return false;
+	    });
+        $('.shoptp_bc').click(function(){		
+		    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		    $body.animate({
+			    scrollTop: 1370
+		    }, 600); 
+		    return false;
+	    });
+        $('.shoptu').click(function(){		
+		    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		    $body.animate({
+			    scrollTop: 1780
+		    }, 600); 
+		    return false;
+	    });
+        $('.shoptc').click(function(){		
+		    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		    $body.animate({
+			    scrollTop: 2190
+		    }, 600); 
+		    return false;
+	    });
+        $('.shopch').click(function(){		
+		    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		    $body.animate({
+			    scrollTop: 2600
+		    }, 600); 
+		    return false;
+	    });
+        $('.shoptn').click(function(){		
+		    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		    $body.animate({
+			    scrollTop: 3010
+		    }, 600); 
+		    return false;
+	    });
+        $('.shopks').click(function(){		
+		    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		    $body.animate({
+			    scrollTop: 3420
+		    }, 600); 
+		    return false;
+	    });
     </script>
     
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADUH4so4XsVPgdzeJ93BBmjUcea9HbrWI&callback=initMap"></script>
