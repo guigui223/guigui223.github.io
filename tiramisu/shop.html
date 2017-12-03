@@ -35,13 +35,55 @@
         }
         .shopselect{
             width: 220px;
-            background-color: rgb(66, 44, 30);
-            height: 700px;
+            background-color: rgb(66, 44, 30);           
             border-radius: 25px;
             position: fixed;
             text-align: center;
             margin: 50px 0 0 30px;
             color: white;
+        }
+        .shopselect_title{
+            font-weight: bold;
+            font-size: 20pt;
+            margin: 20px 0 15px 0;
+            letter-spacing: 3px
+        }
+        .shopselect_title:hover{
+            cursor: default;
+        }        
+        .shopselecter{
+            font-weight: bold;
+            font-size: 16pt;
+            margin: 15px 20px;
+            letter-spacing: 3px;
+            display: inline-block;
+        }
+        .shopselecter:hover{
+            cursor: pointer;
+        }        
+        .shopselecter p{
+            font-weight: bold;
+            font-size: 16pt;
+            letter-spacing: 3px;
+            display: inline-block;
+            margin: 0;
+            float: left;
+        }
+        .shopselecter:hover p{
+            color: rgb(255, 197, 105);
+        }
+        .selecterblock{
+            height: 30px;
+            width: 7px;            
+            display: inline-block;
+            float: left;
+            margin-right: 10px; 
+        }
+        .shopselecter .colorA{
+            background-color: rgb(232, 71, 26);
+        }
+        .shopselecter .colorB{
+            background-color: rgb(241, 165, 128);
         }
         .shopdetail
 
@@ -114,15 +156,34 @@
     <div class="shop">
         <div class="shopselect">
             <div class="shopselect_title">全台門市</div>
-            <div class="shopselecter">花蓮總店</div>
-            <div class="shopselecter">台北復興店</div>
-            <div class="shopselecter">台北承德店</div>
-            <div class="shopselecter">台北板橋店</div>
-            <div class="shopselecter">桃園旗艦店</div>
-            <div class="shopselecter">台中旗艦店</div>
-            <div class="shopselecter">彰化旗艦店</div>
-            <div class="shopselecter">台南旗艦店</div>
-            <div class="shopselecter">高雄旗艦店</div>
+            <div class="shopselecter">
+                <div class="selecterblock colorA"></div><p> 花蓮總店　 </p>
+            </div>
+            <div class="shopselecter">
+                <div class="selecterblock colorB"></div><p> 台北復興店 </p>
+            </div>
+            <div class="shopselecter">
+                <div class="selecterblock colorB"></div><p> 台北承德店 </p>
+            </div>
+            <div class="shopselecter">
+                <div class="selecterblock colorB"></div><p> 台北板橋店 </p>
+            </div>
+            <div class="shopselecter">
+                <div class="selecterblock colorB"></div><p> 桃園旗艦店 </p>
+            </div>
+            <div class="shopselecter">
+                <div class="selecterblock colorA"></div><p> 台中旗艦店 </p>
+            </div>
+            <div class="shopselecter">
+                <div class="selecterblock colorA"></div><p> 彰化旗艦店 </p>
+            </div>
+            <div class="shopselecter">
+                <div class="selecterblock colorB"></div><p> 台南旗艦店 </p>
+            </div>
+            <div class="shopselecter">
+                <div class="selecterblock colorB"></div><p> 高雄旗艦店 </p>
+            </div>
+            <div style="clear:both"></div>
         </div>
         <div class="shopdetail"></div>
     </div>
