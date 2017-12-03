@@ -71,7 +71,112 @@
             color: #422C1E;
         }
 
+        /* cake */
+        .cake_box{
+            display: flex;
+            margin-bottom: 20px;
+        }
 
+        .modal-header{
+            border-bottom: none;
+        }
+        
+        .modal{
+            background-color: rgba(66, 44, 30, 0.801);
+        }
+        
+        .product{
+        border:2px solid white;
+        background-color: white;
+        border-radius: 30px;
+        overflow: hidden;
+        transition-duration: 0.2s;
+        flex: 1;
+        }
+
+        .product:hover{
+            border:2px solid rgb(255, 197, 105);
+        }
+
+        .product:focus{
+            outline: none;  
+        }
+
+        .modal-body{
+            height: 450px;
+            width: 100%;
+            /* border: 1px solid black; */
+            padding: 0;
+        }
+
+        .modal-footer{
+            width: 58%;
+            height: 160px;
+            border-top: none;
+        }
+
+        .gallery-thumbs .swiper-slide{
+            width: 104px !important;
+            border: 1px solid #422C1E;
+        }
+
+        .cake_text{
+            height: 580px;
+            width: 35%;
+            float: left;
+            margin-top: 20px;
+            font-size: 18px;
+        
+        }
+
+        .gallery-top{
+            width: 58%;
+            float: left;
+            margin-left: 20px;
+        }
+
+        .cake_text h3{
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin: 0;
+            margin-top: 5px;
+        }
+
+        .cake_text h4{
+            font-weight: normal;
+            letter-spacing: 3px;
+            margin: 20px 0 20px 0;
+        }
+
+        .cake_text h5{
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin: 20px 0 5px 0;
+        }
+
+        .gallery-thumbs .swiper-slide{
+            padding-left: 1.5px;
+        }
+
+        .cake_name{
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .cake_name .name{
+            flex: 1;
+            text-align: center;
+        }
+
+        .name h4{
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .name h5{
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
 
 
 
@@ -157,7 +262,175 @@
         </div>
     </div>
 
+    <!-- cake -->
+    <div class="container">
+        <div class="cake_box">
+            <!-- Button trigger modal -->
+            <button type="button" class="product" data-toggle="modal" data-target=".bd-example-modal-lg">
+                <img src="img/PC/cake-320/c01.jpg" alt="">
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade bd-example-modal-lg" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
 
+                        <div class="modal-body">
+
+                                <div class="swiper-container gallery-top">
+                                    <div class="swiper-wrapper">
+                                        
+                                        <div class="swiper-slide">
+                                            <img width="415px" height="415px" src="img/PC/cake-508/c01.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img width="415px" height="415px" src="img/PC/cake-508/c01-1.jpg" alt="">
+                                        </div> 
+                                                
+                                    </div>
+                                </div>
+                                <div class="cake_text">
+                                    <p><h3>提拉米蘇蛋糕</h3><h4>NT$240</h4>進口新鮮乳酪製成慕斯，風味可口清爽，底層採用進口小麥胚芽餅製作，香味誘人，並以進口頂級可可粉鋪灑而成，若酌以一杯濃郁咖啡，閒散於午后將是絕配。<h5>規格</h5>八吋蛋糕，直徑約19公分(±1公分)<h5>備註</h5>所有蛋糕產品皆以冷凍保鮮，若蛋糕上方有白色結霜、或者內餡有碎冰皆屬正常現象，稍為退冰後即可，請安心食用。</p>
+                                </div>
+
+                        </div>
+                                            
+                        <div class="modal-footer">
+                            <!-- Swiper -->
+                            <div class="swiper-container gallery-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img width="100px" height="100px" src="img/PC/cake-75/c01.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img width="100px" height="100px" src="img/PC/cake-75/c01-1-75.png" alt="">
+                                    </div>  
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="product" data-toggle="modal" data-target=".bd-example-modal-lg">
+                <img src="img/PC/cake-320/c002.jpg" alt="">
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade bd-example-modal-lg" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+
+                                <div class="swiper-container gallery-top">
+                                    <div class="swiper-wrapper">
+                                        
+                                        <div class="swiper-slide">
+                                            <img width="415px" height="415px" src="img/PC/cake-508/c002.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img width="415px" height="415px" src="img/PC/cake-508/c002-1.jpg" alt="">
+                                        </div> 
+                                                
+                                    </div>
+                                </div>
+                                <div class="cake_text">
+                                    <p><h3>芒果提拉米蘇</h3><h4>NT$280</h4>使用臺灣愛文芒果果丁，讓口感更清新濃郁，再搭配提拉米蘇的誘人滋味與小麥胚芽的大地香氣，令人再三回味。<h5>規格</h5>八吋蛋糕，直徑約19公分(±1公分)<h5>備註</h5>所有蛋糕產品皆以冷凍保鮮，若蛋糕上方有白色結霜、或者內餡有碎冰皆屬正常現象，稍為退冰後即可，請安心食用。</p>
+                                </div>
+
+                        </div>
+                                            
+                        <div class="modal-footer">
+                            <!-- Swiper -->
+                            <div class="swiper-container gallery-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img width="100px" height="100px" src="img/PC/cake-75/c002.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img width="100px" height="100px" src="img/PC/cake-75/c002-1.png" alt="">
+                                    </div>  
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="product" data-toggle="modal" data-target=".bd-example-modal-lg">
+                <img src="img/PC/cake-320/c003.jpg" alt="">
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade bd-example-modal-lg" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+
+                                <div class="swiper-container gallery-top">
+                                    <div class="swiper-wrapper">
+                                        
+                                        <div class="swiper-slide">
+                                            <img width="415px" height="415px" src="img/PC/cake-508/c003.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img width="415px" height="415px" src="img/PC/cake-508/c003-1.jpg" alt="">
+                                        </div> 
+                                                
+                                    </div>
+                                </div>
+                                <div class="cake_text">
+                                    <p><h3>芋頭布丁蛋糕</h3><h4>NT$320</h4>採用大甲芋頭，製成可口的芋頭泥並與 進口鮮乳脂做成夾餡， 讓口感更豐富，將芋頭角丁點綴表面，使芋頭布丁蛋糕更加美味。<h5>規格</h5>八吋蛋糕，直徑約19公分(±1公分) 高盒裝，其最大裝箱數為12盒。 本網站購物系統仍無法判別蛋糕是否為高矮盒裝(材積數增加將影響運費計算)，結帳之後運費可能與實際應付運費有所差距，如果有金額錯誤將以電話或電子郵件聯絡告知為準。<h5>備註</h5>所有蛋糕產品皆以冷凍保鮮，若蛋糕上方有白色結霜、或者內餡有碎冰皆屬正常現象，稍為退冰後即可，請安心食用。</p>
+                                </div>
+
+                        </div>
+                                            
+                        <div class="modal-footer">
+                            <!-- Swiper -->
+                            <div class="swiper-container gallery-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img width="100px" height="100px" src="img/PC/cake-75/c003.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img width="100px" height="100px" src="img/PC/cake-75/c003-1.png" alt="">
+                                    </div>  
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="cake_name">
+            <div class="name"><h4>提拉米蘇蛋糕</h4><h5>NT$240</h5></div>
+            <div class="name"><h4>芒果提拉米蘇</h4><h5>NT$280</h5></div>
+            <div class="name"><h4>芋頭布丁蛋糕</h4><h5>NT$320</h5></div>
+        </div>
+
+    </div>
 
 
 
@@ -175,6 +448,43 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/unslider-min.js"></script>
     <script src="js/swiper.min.js"></script>
+
+    <script>
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 2,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            effect : 'fade',
+            fade: {
+            crossFade: false,
+            }
+
+        });
+
+
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            slidesPerView: 3,
+            touchRatio: 0.5,
+            
+            slideToClickedSlide: true,
+
+
+        });
+
+
+        
+        galleryTop.controller.control = galleryThumbs;
+        galleryThumbs.controller.control = galleryTop;
+
+        $('#modal').on('shown.bs.modal', function (e) {
+            galleryTop.update();
+            galleryThumbs.update();
+        })
+    </script>
     
 </body>
 </html>
