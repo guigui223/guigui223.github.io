@@ -31,7 +31,7 @@
             width: 100%;
             max-width: 1140px;
             margin: auto;
-            height: 3000px;
+            margin-bottom: 50px;            
         }
         .shopselect{
             width: 220px;
@@ -41,6 +41,7 @@
             text-align: center;
             margin: 50px 0 0 30px;
             color: white;
+            box-shadow:4px 4px 12px -2px rgb(0, 0, 0);
         }
         .shopselect_title{
             font-weight: bold;
@@ -85,7 +86,25 @@
         .shopselecter .colorB{
             background-color: rgb(241, 165, 128);
         }
-        .shopdetail
+        .shopdetail{            
+            width: 100%;            
+            padding-left: 300px;
+            padding-top: 50px;
+        }
+        .eachshop{
+            margin-bottom: 20px;
+        }
+        .eachshopdetail{
+            height: 300px;
+            width: 45%;
+            display: inline-block;
+        }
+        .shopmap{
+            height: 300px;
+            width: 45%;
+            display: inline-block;
+        }
+        
 
 
 
@@ -185,7 +204,53 @@
             </div>
             <div style="clear:both"></div>
         </div>
-        <div class="shopdetail"></div>
+        <div class="shopdetail">
+            <div class="eachshop">
+                <h1>花蓮總店</h1>
+                <div id="map_hl" class="shopmap"></div>
+                <div class="eachshopdetail"></div>
+            </div>
+            <div class="eachshop">
+                <h1>台北復興店</h1>
+                <div id="map_tp_fs" class="shopmap"></div>
+                <div class="eachshopdetail"></div>
+            </div>
+            <div class="eachshop">
+                <h1>台北承德店</h1>
+                <div id="map_tp_cd" class="shopmap"></div>
+                <div class="eachshopdetail"></div>
+            </div>
+            <div class="eachshop">
+                <h1>台北板橋店</h1>
+                <div id="map_tp_bc" class="shopmap"></div>
+                <div class="eachshopdetail"></div>
+            </div>
+            <div class="eachshop">
+                <h1>桃園旗艦店</h1>
+                <div id="map_tu" class="shopmap"></div>
+                <div class="eachshopdetail"></div>
+            </div>
+            <div class="eachshop">
+                <h1>台中旗艦店</h1>
+                <div id="map_tc" class="shopmap"></div>
+                <div class="eachshopdetail"></div>
+            </div>
+            <div class="eachshop">
+                <h1>彰化旗艦店</h1>
+                <div id="map_ch" class="shopmap"></div>
+                <div class="eachshopdetail"></div>
+            </div>
+            <div class="eachshop">
+                <h1>台南旗艦店</h1>
+                <div id="map_tn" class="shopmap"></div>
+                <div class="eachshopdetail"></div>
+            </div>
+            <div class="eachshop">
+                <h1>高雄旗艦店</h1>
+                <div id="map_ks" class="shopmap"></div>
+                <div class="eachshopdetail"></div>
+            </div>
+        </div>
     </div>
 
 <!-- Footer -->
@@ -201,10 +266,94 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/unslider-min.js"></script>
     <script src="js/swiper.min.js"></script>
-    <script>
+    <script>  
+        function initMap() {
+            var uluru = { lat: 23.976827,  lng: 121.592318 };
+            var map = new google.maps.Map(document.getElementById('map_hl'), {
+                zoom: 15,
+                center: uluru
+            });            
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });        
+            var uluru = { lat: 25.027799,  lng: 121.543310 };
+            var map = new google.maps.Map(document.getElementById('map_tp_fs'), {
+                zoom: 15,
+                center: uluru
+            });            
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+            var uluru = { lat: 25.051703,  lng: 121.517388 };
+            var map = new google.maps.Map(document.getElementById('map_tp_cd'), {
+                zoom: 15,
+                center: uluru
+            });            
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+            var uluru = { lat: 25.017117,  lng: 121.476611 };
+            var map = new google.maps.Map(document.getElementById('map_tp_bc'), {
+                zoom: 15,
+                center: uluru
+            });            
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+            var uluru = { lat: 25.011237,  lng: 121.300845 };
+            var map = new google.maps.Map(document.getElementById('map_tu'), {
+                zoom: 15,
+                center: uluru
+            });            
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+            var uluru = { lat: 24.140204,  lng:  120.660679 };
+            var map = new google.maps.Map(document.getElementById('map_tc'), {
+                zoom: 15,
+                center: uluru
+            });            
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+            var uluru = { lat: 24.078443,   lng: 120.540594 };
+            var map = new google.maps.Map(document.getElementById('map_ch'), {
+                zoom: 15,
+                center: uluru
+            });            
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+            var uluru = { lat: 22.983135,   lng: 120.217102 };
+            var map = new google.maps.Map(document.getElementById('map_tn'), {
+                zoom: 15,
+                center: uluru
+            });            
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+            var uluru = { lat: 22.660464,   lng: 120.308703 };
+            var map = new google.maps.Map(document.getElementById('map_ks'), {
+                zoom: 15,
+                center: uluru
+            });            
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
 
-
+        }
     </script>
-   
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADUH4so4XsVPgdzeJ93BBmjUcea9HbrWI&callback=initMap"></script>
+
 </body>
 </html>
