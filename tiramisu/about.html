@@ -18,6 +18,11 @@
     
         body {
             font-family: 微軟正黑體;
+            background-image: url('img/aboutus-18.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 5000px;
+            z-index: 0;
         }
     
         .logo {
@@ -27,6 +32,50 @@
         .my-slider {
             width: 100%;
             height: auto;
+        }
+
+        /* about */
+        .about{
+            width: 100%;
+            max-width: 1140px;
+            margin: auto;
+            position: relative;
+            height: 3000px;
+        }
+        .about_a{            
+            width: 800px;
+            height: 560px;
+            background-image: url('img/aboutus-19.jpg');
+            background-size: contain;             
+            background-position: center;
+            border-radius: 45% 45% 45% 45% / 48% 48% 48% 48%;
+            top: 100px;
+            position: absolute;
+            z-index: 1;
+        }
+        .about_b{            
+            width: 800px;
+            height: 560px;
+            background-image: url('img/aboutus-20.jpg');
+            background-size: contain;             
+            background-position: center;            
+            border-radius: 45% 45% 45% 45% / 48% 48% 48% 48%;
+            top: 800px;
+            right: 20px;
+            margin-left:100px;
+            position: absolute; 
+        }
+
+        .about_c{            
+            width: 950px;
+            height: 637px;
+            background-image: url('img/aboutus-21.jpg');
+            background-size: contain;             
+            background-position: center;            
+            border-radius: 45% 45% 45% 45% / 48% 48% 48% 48%;
+            top: 1560px;            
+            left: 95px;
+            position: absolute; 
         }
 
 
@@ -98,6 +147,12 @@
         </div>
     </nav>
 
+    <!-- 內容部分 -->
+    <div class="about">
+        <div class="about_a"></div>
+        <div class="about_b"></div>
+        <div class="about_c"></div>
+    </div>
 
     <!-- Footer -->
     <div class="footer">
