@@ -626,12 +626,16 @@
 
 
         
-        galleryTop.controller.control = galleryThumbs;
-        galleryThumbs.controller.control = galleryTop;
+        for (var i = 0; i < galleryTop.length; i++) {
+            galleryTop[i].controller.control = galleryThumbs[i];
+            galleryThumbs[i].controller.control = galleryTop[i];
+        }
 
         $('#modal').on('shown.bs.modal', function (e) {
-            galleryTop.update();
-            galleryThumbs.update();
+            for (var i = 0; i < galleryTop.length; i++) {
+                galleryTop[i].update();
+                galleryThumbs[i].update();
+            }
         })
         
     </script>

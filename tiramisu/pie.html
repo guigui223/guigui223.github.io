@@ -461,37 +461,46 @@
     <script src="js/swiper.min.js"></script>
 
     <script>
-        var galleryTop = new Swiper('.gallery-top', {
-            spaceBetween: 2,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            effect : 'fade',
-            fade: {
-            crossFade: false,
-            }
+        var galleryTop = [];
+        var galleryThumbs = [];
 
+        $(".gallery-top").each(function (index, element) {
+            var $this = $(this);
+            galleryTop.push(new Swiper(this, {
+                spaceBetween: 2,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                effect: 'fade',
+                fade: {
+                    crossFade: false,
+                }
+
+            }));
         });
 
-
-        var galleryThumbs = new Swiper('.gallery-thumbs', {
-            spaceBetween: 30,
-            centeredSlides: true,
-            slidesPerView: 3,
-            touchRatio: 0.5,
-            
-            slideToClickedSlide: true,
-
-
+        $(".gallery-thumbs").each(function (index, element) {
+            var $this = $(this);
+            galleryThumbs.push(new Swiper(this, {
+                spaceBetween: 30,
+                centeredSlides: true,
+                slidesPerView: 3,
+                touchRatio: 0.5,
+                slideToClickedSlide: true,
+            }));
         });
 
-        galleryTop.controller.control = galleryThumbs;
-        galleryThumbs.controller.control = galleryTop;
+        for (var i = 0; i < galleryTop.length; i++) {
+            galleryTop[i].controller.control = galleryThumbs[i];
+            galleryThumbs[i].controller.control = galleryTop[i];
+        }
 
         $('#modal').on('shown.bs.modal', function (e) {
-                galleryTop.update();
-                galleryThumbs.update();
+            for (var i = 0; i < galleryTop.length; i++) {
+                galleryTop[i].update();
+                galleryThumbs[i].update();
+            }
         })
 
 
