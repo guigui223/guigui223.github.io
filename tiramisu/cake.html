@@ -1172,7 +1172,7 @@
             galleryThumbs[i].controller.control = galleryTop[i];
         }
 
-        $('#modal').on('shown.bs.modal', function (e) {
+        $('.modal').on('shown.bs.modal', function (e) {
             for (var i = 0; i < galleryTop.length; i++) {
                 galleryTop[i].update();
                 galleryThumbs[i].update();
